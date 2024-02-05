@@ -1,0 +1,40 @@
+#parent{
+    height: 800px;
+    width: 100%;
+    background-color: blue;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#child1, #child2{
+    height: 500px;
+    width: 70%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.heading{
+    text-align: center;
+    /* font-size: 30px; */
+    color: red;
+    border: 1px solid red;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 30px;
+    width: 700px;
+    height: auto;
+    transition: scale 1s ease-in-out;
+    background-color: greenyellow;
+}
+#heading:hover{
+    border: 1px solid greenyellow;
+    color: greenyellow;
+    background-color: red;
+    scale: 1.1;
+}
