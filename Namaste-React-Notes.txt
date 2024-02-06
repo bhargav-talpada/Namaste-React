@@ -19,10 +19,12 @@ Namaste React :-
 ==> Ep - 02 :-
 
 	Npm : Node Package Manager (npmjs.com)
-		-> Npm is work as a node packge manager and it has manage node packge.
-		-> Npm is a standard repositiry it has all the packges.
-		-> Any packge you will use in our project you will used npm.
-		-> Npm has all the packges, all the utilities.
+		-> Npm is work as a node package manager and it has package manager.
+		-> Npm is a standard repositiry it has all the packages.
+		-> Any pacakge you will use in our project you will used npm.
+		-> Npm has all the packages, all the utilities.
+		-> package.json is configuration of npm.
+		-> Our project depend on some package and package depend on some dependuncy & npm is manage all pacakge & dependuncy.
 		-> 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
