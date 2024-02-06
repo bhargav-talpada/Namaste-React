@@ -1,0 +1,64 @@
+Namaste React :- 
+
+==> Ep - 01 :-
+
+	-> React is most popular js library to build large scale application in this world.
+	-> VS Code have a Emmet its basically generate code for you.
+	-> React is developed by Meta developer.
+	
+	=> CDN : Content Delivery Network is a network of interconnected servers that speeds up webpage loading for data-heavy application.
+	=> Crossorigin : Crossorigin attribute is used when a script on one domain is trying to fetch or interact with resources from another domain.
+
+	-> in react React.createElement() takes 3 parameter - 1. Name of tag you create, 2. object, 3. child.
+	-> in object parameter you can pass attribute like name of id or class of element you should created.
+	-> in third parameter you can create a child element or siblings of child elements.
+	-> Example : const heading = React.createElement('h1', {id: "heading", class: "heading"}, 'Hello from React');
+	-> in react ReacrDOM.createRoot() to create root element.
+	-> Example : const root = ReactDOM.createRoot(document.getElementById('root'))
+
+==> Ep - 02 :-
+
+	Npm : Node Package Manager (npmjs.com)
+		-> Npm is work as a node packge manager and it has manage node packge.
+		-> Npm is a standard repositiry it has all the packges.
+		-> Any packge you will use in our project you will used npm.
+		-> Npm has all the packges, all the utilities.
+		-> 
+-------------------------------------------------------------------------------------------------------------------------------------------------
+API : API stand for Application Programing Interface.
+	React used to call api.
+	api must be create inside a json.
+	json file axtension .json.
+	
+	example: 
+		const user = 
+			[
+				{
+					"id":101,
+					"name":"bhargav",
+				}
+			]
+
+	json-server install cmd : npm i -g json-server
+	json-server run cmd : npm run json-server
+	packge.json file : "json-server": "json-server --watch db.json --port=8000"
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+OBJECT : object is entity used to stored a data inside of {"property":"value"}
+	object will b declare or assign 3 types
+	1. object as literals
+	=> Example,  const emp = '{"name":"bhargav"}'
+			console.log(emp)
+	2. object as New keyword
+	=> Example, const emp = new Object()
+			const res = {"name":"bhargav"}
+			console.log(res)
+	3. object declared as constructor this keyword
+	=> Example, function emp(id,name,age){
+   				 this.id = 1001,
+    				this.name = "bhargav",
+    				this.age = 20
+ 			 }
+  			const emp1 = new emp(1001,"bhargav",20);
+  			console.log(emp1)
