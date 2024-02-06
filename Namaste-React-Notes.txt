@@ -23,9 +23,18 @@ Namaste React :-
 		-> Npm is a standard repositiry it has all the packages.
 		-> Any pacakge you will use in our project you will used npm.
 		-> Npm has all the packages, all the utilities.
-		-> package.json is configuration of npm.
+		=> package.json - is configuration of npm.
+		-> package.json file keep the track version of pacakge which is installed.
+		=> package.lock.json - file keep the track of exact version of package which is installed.
+		=> node_modules - node_modules contains all the code that be fetch from npm.
+		-> node_modules contains all data to project or dependnucy need.
 		-> Our project depend on some package and package depend on some dependuncy & npm is manage all pacakge & dependuncy.
-		-> 
+		-> When are two types of dependuncy in our app 1. dev dependuncy and 2. normal dependuncy
+			1. dev dependuncy - it is generally required for in development phase
+			2. normal dependnucy - it is used in production also
+		=> Caret sign (^) : to put ^ sign below the version of package this sign automatically upgrade package version.
+		=> Tilde sign (~) : to put ~ sign below the version of pacakge this sign install the major version of package.
+		=> Transitive dependuncy - one dependnucy they have own dependnucy they have own dependnucy...
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.

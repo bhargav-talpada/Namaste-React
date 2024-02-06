@@ -6,11 +6,14 @@
   "scripts": {
     "test": "jest"
   },
-  "repository":{
+  "repository": {
     "type": "git",
     "url": "git0+https://github.com/Bhuro11/Namaste-React.git"
   },
   "keywords": [],
   "author": "Bhargav Talpada",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
 }
