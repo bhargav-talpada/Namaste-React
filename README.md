@@ -8,3 +8,13 @@
 - Caching - Faster Building
 - Image Optimization
 - Minification
+- Bandling
+- Compress
+- Cinsistent Hashing
+- Code Splitting
+- Differential Bundling - support older browser
+- Diagnostic
+- Error Handling
+- HTTPs
+- Tree Shaking - remove unused code
+- Different dev and production bundle
