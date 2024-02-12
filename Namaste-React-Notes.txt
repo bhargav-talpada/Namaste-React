@@ -41,6 +41,15 @@ Namaste React :-
 		-> just like we have npm similarlly we have something knowa as npx.
 		-> npx means executing a package.
 		-> import React from 'react' - react is basically reffers to the react inside of node_modules.
+	
+==> Ep - 03 :-
+
+	-> npm start = npm run start
+	-> React element is similar to DOM element.
+	-> React element is at end of the day it is a object and when we render this element into the dom then we becomes html element. 
+	-> JSX is not html in js.
+	-> JSX is looks like html or xml.
+	-> JSX is a syntax.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.

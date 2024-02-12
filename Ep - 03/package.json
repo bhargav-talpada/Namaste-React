@@ -1,0 +1,21 @@
+{
+  "name": "ep---03",
+  "version": "1.0.0",
+  "description": "Namaste React",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git0+https://github.com/Bhuro11/Namaste-React.git"
+  },
+  "author": "Bhargav Talpada",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
