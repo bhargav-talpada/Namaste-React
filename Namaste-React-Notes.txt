@@ -50,6 +50,7 @@ Namaste React :-
 	-> JSX is not html in js.
 	-> JSX is looks like html or xml.
 	-> JSX is a syntax.
+	-> Babel is converting JSX to React.createElement and React.createElement render into html element. 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
