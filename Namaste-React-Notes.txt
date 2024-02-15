@@ -50,7 +50,12 @@ Namaste React :-
 	-> JSX is not html in js.
 	-> JSX is looks like html or xml.
 	-> JSX is a syntax.
-	-> Babel is converting JSX to React.createElement and React.createElement render into html element. 
+	-> Babel is converting JSX to React.createElement and React.createElement render into html element.
+	=> Components : Everything in react is a components. 
+		-> There are two types of components - 1. Classbased components 2. Functional components.
+		-> Classbased components : 
+		-> Functional components : Functional components is a normal js function which returns some piece of jsx.
+	-> In react you can write any js code inside of {}.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
