@@ -56,6 +56,10 @@ Namaste React :-
 		-> Classbased components : 
 		-> Functional components : Functional components is a normal js function which returns some piece of jsx.
 	-> In react you can write any js code inside of {}.
+
+==> Ep - 04 :-
+
+	-> 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
