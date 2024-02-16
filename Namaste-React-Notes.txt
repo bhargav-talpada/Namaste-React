@@ -59,7 +59,9 @@ Namaste React :-
 
 ==> Ep - 04 :-
 
-	-> 
+	=> Props : Props is short form of Properties.
+	-> Using props to pass data to components.
+	-> Props are normal argument.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
