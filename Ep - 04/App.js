@@ -30,7 +30,7 @@ const rajMandirFood = {
         "cloudinaryImageId": "m6hrehrzr0mwfzjbsnav",
         "locality": "Tagore Road",
         "areaName": "Astron Chowk",
-        "costForTwo": "300 for two",
+        "costForTwo": "₹300 for two",
         "cuisines": [
           "Burgers",
           "Pizzas"
@@ -1129,7 +1129,7 @@ const ResturentCart = (props) =>{
             <h3>{resData.info.name}</h3>
             <h4>{resData.info.cuisines.join(", ")}</h4>
             <h4>{resData.info.avgRating}</h4>
-            <h4> ₹ {resData.info.costForTwo}/-</h4> {/* ₹ = ctrl + alt + 4 */}
+            <h4>{resData.info.costForTwo}/-</h4> {/* ₹ = ctrl + alt + 4 */}
         </div>
     )
 }
