@@ -62,6 +62,7 @@ Namaste React :-
 	=> Props : Props is short form of Properties.
 	-> Using props to pass data to components.
 	-> Props are normal argument.
+	=> Config-driven UI :It is a technique that allows you to create dynamic and customizable UIs without hard coding them. 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
