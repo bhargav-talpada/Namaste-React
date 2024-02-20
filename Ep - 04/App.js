@@ -1,5 +1,5 @@
 import React from "react"
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom/client"
 
 const Header = () => {
     return(
@@ -1820,13 +1820,14 @@ const resList = [
 
 const ResturentCart = (props) =>{
     const {resData} = props;
+    const {cloudinaryImageId, name, cuisines, avgRating, costForTwo} = resData?.info;
     return(
         <div className="res-carts" style={styleCart}>
-            <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+resData.info.cloudinaryImageId} className="cart-img" />
-            <h3>{resData.info.name}</h3>
-            <h4>{resData.info.cuisines.join(", ")}</h4>
-            <h4>{resData.info.avgRating}</h4>
-            <h4>{resData.info.costForTwo}/-</h4> {/* ₹ = ctrl + alt + 4 */}
+            <img src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+cloudinaryImageId} className="cart-img" />
+            <h3>{name}</h3>
+            <h4>{cuisines.join(", ")}</h4>
+            <h4>{avgRating}</h4>
+            <h4>{costForTwo}/-</h4> {/* ₹ = ctrl + alt + 4 */}
         </div>
     )
 }
@@ -1834,8 +1835,11 @@ const ResturentCart = (props) =>{
 const Body = () => {
     return(
         <div className="body">
-            <div className="search">search</div>
+            <div className="search">
+              <input className="" placeholder="Search.."></input>
+            </div>
             <div className="resturent-carts">
+                {/* First way 
                 <ResturentCart resData={resList[0]} />
                 <ResturentCart resData={resList[1]} />
                 <ResturentCart resData={resList[2]} />
@@ -1856,6 +1860,11 @@ const Body = () => {
                 <ResturentCart resData={resList[17]} />
                 <ResturentCart resData={resList[18]} />
                 <ResturentCart resData={resList[19]} />
+                 */}
+                 {/* and use map function to loop array (Secound way) */}
+                { 
+                  resList.map((resturent) => <ResturentCart key={resturent.info.id} resData={resturent} />)
+                }
             </div>
         </div>
     )

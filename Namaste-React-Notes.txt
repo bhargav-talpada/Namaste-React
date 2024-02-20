@@ -56,6 +56,7 @@ Namaste React :-
 		-> Classbased components : 
 		-> Functional components : Functional components is a normal js function which returns some piece of jsx.
 	-> In react you can write any js code inside of {}.
+	-> We can reuse components.
 
 ==> Ep - 04 :-
 
@@ -63,6 +64,9 @@ Namaste React :-
 	-> Using props to pass data to components.
 	-> Props are normal argument.
 	=> Config-driven UI :It is a technique that allows you to create dynamic and customizable UIs without hard coding them. 
+	-> data?.data = it's known as optional chaining.
+	-> Whwnever you are doing mapping and looping you wite key of element.
+	-> You dont't have an unique key you write index as key but it's not recommended. 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
