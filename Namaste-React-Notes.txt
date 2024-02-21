@@ -67,6 +67,10 @@ Namaste React :-
 	-> data?.data = it's known as optional chaining.
 	-> Whwnever you are doing mapping and looping you wite key of element.
 	-> You dont't have an unique key you write index as key but it's not recommended. 
+
+==> Ep - 05 :- 
+	-> React is use js in behind.
+	-> In react, best practice is to make saparete file of saparete component.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.

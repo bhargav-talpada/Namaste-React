@@ -1,0 +1,19 @@
+{
+  "name": "ep---05",
+  "version": "1.0.0",
+  "description": "Namaste React Episode 5",
+  "main": "App.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "author": "Bhargav Talpada",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.11.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
