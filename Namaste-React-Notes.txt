@@ -70,7 +70,11 @@ Namaste React :-
 
 ==> Ep - 05 :- 
 	-> React is use js in behind.
-	-> In react, best practice is to make saparete file of saparete component.
+	-> In react, best practice is to make saparete file of every components.
+	-> To use component in any other components to export the component.
+	-> Two ways to export component
+		1. export defult App
+		2. export defult const App = () => {}
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
