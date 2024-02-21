@@ -74,7 +74,10 @@ Namaste React :-
 	-> To use component in any other components to export the component.
 	-> Two ways to export component
 		1. export defult App
-		2. export defult const App = () => {}
+		2. export const var_name = ''
+	-> Secound way to import is known as named export.
+	-> You need to export multiple things in file you can use named export or import.
+	-> You can write a common things in a utils folder.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
