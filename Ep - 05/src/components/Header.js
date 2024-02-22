@@ -1,7 +1,7 @@
 import React from "react"
 import { LOGO_URL } from "../utils/constants";
 
-const Header = () => {
+export const Header = () => {
     return(
         <div className="header">
             <div className="">

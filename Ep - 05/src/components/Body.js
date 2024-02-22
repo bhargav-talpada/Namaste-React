@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import ResturentCart from "./ResturentCart";
 import resList from "../utils/apiData";
 
+
 const Body = () => {
+
     return(
         <div className="body">
-            <div className="search">
-              <input className="search-box" placeholder="Search.."></input>
+            <div className="filter">
+              <button className="filter-btn" onClick={() => {console.log('btn clicked');}} >Top Rated Resturents</button>
             </div>
             <div className="resturent-carts">
                 {/* First way 

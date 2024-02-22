@@ -72,10 +72,14 @@ Namaste React :-
 	-> React is use js in behind.
 	-> In react, best practice is to make saparete file of every components.
 	-> To use component in any other components to export the component.
-	-> Two ways to export component
-		1. export defult App
+	-> Two ways to export or import component
+		1. defult import or export
 		2. export const var_name = ''
-	-> Secound way to import is known as named export.
+	-> In defult export, you write export defult component name.
+	-> In defult import, you write import component name from 'path'.
+	-> Secound way to import or export is known as named import or export.
+	-> In named export, you write export var nama.
+	-> In named import, you write import {var name} from 'path'.
 	-> You need to export multiple things in file you can use named export or import.
 	-> You can write a common things in a utils folder.
 -------------------------------------------------------------------------------------------------------------------------------------------------

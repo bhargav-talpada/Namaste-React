@@ -45,13 +45,8 @@
     height: 130px;
 }
 
-.search{
-    height: 80px;
-    display: flex;
-    align-items: center;
-}
-.search-box{
-    padding: 10px;
-    font-size: 20px;
-    margin-left: 3px;
+.filter-btn{
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
 }

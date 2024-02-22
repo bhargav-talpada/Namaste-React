@@ -26,3 +26,15 @@
 -> Body
     - Search
     - Resturent Cards
+
+# Import/Export
+-> Two types pf import/export.
+
+1. Named Import/Export
+    export const var_name/component_name
+    import {var_name/component_name} from 'path'
+
+2. Default Import/Export
+    export defult component
+    import component from 'path'
+
