@@ -38,3 +38,9 @@
     export defult component
     import component from 'path'
 
+# React Hooks
+- Normal JS utilities function
+- wrote by Meta developers
+- Very important hooks is 
+    1. useState()
+    2. useEffect()

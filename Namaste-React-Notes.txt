@@ -82,6 +82,10 @@ Namaste React :-
 	-> In named import, you write import {var name} from 'path'.
 	-> You need to export multiple things in file you can use named export or import.
 	-> You can write a common things in a utils folder.
+	-> Why react is fast because react do fast dom-manipulation.
+	=> React Hooks :- 
+		-> React Hooks is a normal javascript function.
+		-> useState() and useEffect() are a very important hooks in react.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
