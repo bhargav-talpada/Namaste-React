@@ -4,48 +4,15 @@ import resList from "../utils/apiData";
 
 
 const Body = () => {
-  let resturentList = [
-    {
-      "info": {
-        "id": "103384",
-        "name": "La Pino'z Pizza",
-        "cloudinaryImageId": "vwpscdnalrg9yxi1yckp",
-        "costForTwo": "₹350 for two",
-        "cuisines": [
-          "Pizzas",
-          "Pastas",
-          "Italian",
-          "Desserts",
-          "Beverages"
-        ],
-        "avgRating": 3.4
-      },
-    },
-    {
-      "info": {
-        "id": "103385",
-        "name": "Pizza Zone",
-        "cloudinaryImageId": "vwpscdnalrg9yxi1yckp",
-        "costForTwo": "₹250 for two",
-        "cuisines": [
-          "Pizzas",
-          "Pastas",
-          "Italian",
-          "Desserts",
-          "Beverages",
-          "Starters"
-        ],
-        "avgRating": 4.4
-      },
-    }
-  ]
+
+    const [resturentList, setResturentList] = useState(resList)
 
     return(
         <div className="body">
             <div className="filter">
               <button className="filter-btn" onClick={() => {
-                resturentList = resturentList.filter(res => res.info.avgRating > 4)
-                console.log(resturentList);
+                const filterdList = resturentList.filter(res => res.info.avgRating > 4.3)
+                setResturentList(filterdList)
               }} >Top Rated Resturents</button>
             </div>
             <div className="resturent-carts">

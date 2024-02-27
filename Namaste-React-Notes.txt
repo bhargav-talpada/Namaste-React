@@ -86,6 +86,14 @@ Namaste React :-
 	=> React Hooks :- 
 		-> React Hooks is a normal javascript function.
 		-> useState() and useEffect() are a very important hooks in react.
+		1. useState() : 
+			-> useState() generates super powerfull state variables in react.
+			-> You have to import useState from your react.
+			-> You have to import useState like a named import.
+			-> useState maintains the state of your component.
+			-> useState allows you to modify your states.
+			-> Whenever state variable is update react will re-render the component.
+			-> useState will update your UI very quickly.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.

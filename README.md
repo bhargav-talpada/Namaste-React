@@ -42,5 +42,5 @@
 - Normal JS utilities function
 - wrote by Meta developers
 - Very important hooks is 
-    1. useState()
+    1. useState() - it generate superpowerfull state variables in react
     2. useEffect()
