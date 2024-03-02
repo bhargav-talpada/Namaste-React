@@ -94,6 +94,12 @@ Namaste React :-
 			-> useState allows you to modify your states.
 			-> Whenever state variable is update react will re-render the component.
 			-> useState will update your UI very quickly.
+	-> React uses Reconciliation Algoritham(come in React 16) and Reconciliation Algoritham also know as React Fiber.
+	-> React creates virtual DOM.
+	-> Actual DOM is are the tags. 
+	-> virtual DOM is representation of actual DOM.
+	-> React virtual DOM is a object.
+	-> Diff Algoritham : it finds difference between pre virtual DOM & updated virtual DOM.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
