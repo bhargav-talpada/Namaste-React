@@ -74,7 +74,7 @@ Namaste React :-
 	-> To use component in any other components to export the component.
 	-> Two ways to export or import component
 		1. defult import or export
-		2. export const var_name = ''
+		2. Named import or export
 	-> In defult export, you write export defult component name.
 	-> In defult import, you write import component name from 'path'.
 	-> Secound way to import or export is known as named import or export.
