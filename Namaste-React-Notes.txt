@@ -69,6 +69,7 @@ Namaste React :-
 	-> You dont't have an unique key you write index as key but it's not recommended. 
 
 ==> Ep - 05 :- 
+
 	-> React is use js in behind.
 	-> In react, best practice is to make saparete file of every components.
 	-> To use component in any other components to export the component.
@@ -100,6 +101,14 @@ Namaste React :-
 	-> virtual DOM is representation of actual DOM.
 	-> React virtual DOM is a object.
 	-> Diff Algoritham : it finds difference between pre virtual DOM & updated virtual DOM.
+
+==> Ep - 06 :-
+
+	=> Monolith Architecture : 
+	=> Microservices Architecture : In this architecture we have different service for different activity.
+	-> Backend service, UI service, Authentication service, DB service, Notification service etc... all are microservices.
+	-> For each and every service we had a different project and this is known as saparation of consults and it follows single responsibility principle.
+	-> All services have a own port all services run on the own port.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
