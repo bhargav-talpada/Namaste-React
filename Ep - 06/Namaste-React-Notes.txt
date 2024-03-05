@@ -1,0 +1,149 @@
+Namaste React :- 
+
+==> Ep - 01 :-
+
+	-> React is most popular js library to build large scale application in this world.
+	-> VS Code have a Emmet its basically generate code for you.
+	-> React is developed by Meta developer.
+	
+	=> CDN : Content Delivery Network is a network of interconnected servers that speeds up webpage loading for data-heavy application.
+	=> Crossorigin : Crossorigin attribute is used when a script on one domain is trying to fetch or interact with resources from another domain.
+
+	-> in react React.createElement() takes 3 parameter - 1. Name of tag you create, 2. object, 3. child.
+	-> in object parameter you can pass attribute like name of id or class of element you should created.
+	-> in third parameter you can create a child element or siblings of child elements.
+	-> Example : const heading = React.createElement('h1', {id: "heading", class: "heading"}, 'Hello from React');
+	-> in react ReacrDOM.createRoot() to create root element.
+	-> Example : const root = ReactDOM.createRoot(document.getElementById('root'))
+
+==> Ep - 02 :-
+
+	Npm : Node Package Manager (npmjs.com)
+		-> Npm is work as a node package manager and it has package manager.
+		-> Npm is a standard repositiry it has all the packages.
+		-> Any pacakge you will use in our project you will used npm.
+		-> Npm has all the packages, all the utilities.
+		-> If you need to insatll any command you will to use npm command.
+		=> package.json - is configuration of npm.
+		-> package.json file keep the track version of pacakge which is installed.
+		=> package.lock.json - file keep the track of exact version of every package which is installed.
+		=> node_modules - node_modules contains all the code that be fetch from npm.
+		-> node_modules contains all data to project or dependnucy need.
+		-> Our project depend on some package and package depend on some other dependuncy & npm is manage all pacakge & dependuncy.
+		-> When are two types of dependuncy in our app 1. dev dependuncy and 2. normal dependuncy
+			1. dev dependuncy - it is generally required for in development phase
+			2. normal dependnucy - it is used in production also
+		=> Caret sign (^) : to put ^ sign below the version of package this sign automatically upgrade package version.
+		=> Tilde sign (~) : to put ~ sign below the version of pacakge this sign install the major version of package.
+		=> Transitive dependuncy - one dependnucy they have own dependnucy they have own dependnucy...
+		-> If you have your package.json or pacakge.lock.json you create all your node_modules.
+		-> npx parcel index.html - currentlly parcel is executing.
+		-> just like we have npm similarlly we have something known as npx.
+		-> npx means executing a package.
+		-> import React from 'react' - react is basically reffers to the react inside of node_modules.
+	
+==> Ep - 03 :-
+
+	-> npm start = npm run start
+	-> React element is similar to DOM element.
+	-> React element is at end of the day it is a object and when we render this element into the dom then we becomes html element. 
+	-> JSX is not html in js.
+	-> JSX is looks like html or xml.
+	-> JSX is a syntax.
+	-> Babel is converting JSX to React.createElement and React.createElement render into html element.
+	=> Components : Everything in react is a components. 
+		-> There are two types of components - 1. Classbased components 2. Functional components.
+		-> Classbased components : 
+		-> Functional components : Functional components is a normal js function which returns some piece of jsx.
+	-> In react you can write any js code inside of {}.
+	-> We can reuse components.
+
+==> Ep - 04 :-
+
+	=> Props : Props is short form of Properties.
+	-> Using props to pass data to components.
+	-> Props are normal argument.
+	=> Config-driven UI :It is a technique that allows you to create dynamic and customizable UIs without hard coding them. 
+	-> data?.data = it's known as optional chaining.
+	-> Whwnever you are doing mapping and looping you wite key of element.
+	-> You dont't have an unique key you write index as key but it's not recommended. 
+
+==> Ep - 05 :- 
+
+	-> React is use js in behind.
+	-> In react, best practice is to make saparete file of every components.
+	-> To use component in any other components to export the component.
+	-> Two ways to export or import component
+		1. defult import or export
+		2. Named import or export
+	-> In defult export, you write export defult component name.
+	-> In defult import, you write import component name from 'path'.
+	-> Secound way to import or export is known as named import or export.
+	-> In named export, you write export var nama.
+	-> In named import, you write import {var name} from 'path'.
+	-> You need to export multiple things in file you can use named export or import.
+	-> You can write a common things in a utils folder.
+	-> Why react is fast because react do fast dom-manipulation.
+	=> React Hooks :- 
+		-> React Hooks is a normal javascript function.
+		-> useState() and useEffect() are a very important hooks in react.
+		1. useState() : 
+			-> useState() generates super powerfull state variables in react.
+			-> You have to import useState from your react.
+			-> You have to import useState like a named import.
+			-> useState maintains the state of your component.
+			-> useState allows you to modify your states.
+			-> Whenever state variable is update react will re-render the component.
+			-> useState will update your UI very quickly.
+	-> React uses Reconciliation Algoritham(come in React 16) and Reconciliation Algoritham also know as React Fiber.
+	-> React creates virtual DOM.
+	-> Actual DOM is are the tags. 
+	-> virtual DOM is representation of actual DOM.
+	-> React virtual DOM is a object.
+	-> Diff Algoritham : it finds difference between pre virtual DOM & updated virtual DOM.
+
+==> Ep - 06 :-
+
+	=> Monolith Architecture : 
+	=> Microservices Architecture : In this architecture we have different service for different activity.
+	-> Backend service, UI service, Authentication service, DB service, Notification service etc... all are microservices.
+	-> For each and every service we had a different project and this is known as saparation of consults and it follows single responsibility principle.
+	-> All services have a own port all services run on the own port.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+API : API stand for Application Programing Interface.
+	React used to call api.
+	api must be create inside a json.
+	json file axtension .json.
+	
+	example: 
+		const user = 
+			[
+				{
+					"id":101,
+					"name":"bhargav",
+				}
+			]
+
+	json-server install cmd : npm i -g json-server
+	json-server run cmd : npm run json-server
+	packge.json file : "json-server": "json-server --watch db.json --port=8000"
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+OBJECT : object is entity used to stored a data inside of {"property":"value"}
+	object will b declare or assign 3 types
+	1. object as literals
+	=> Example,  const emp = '{"name":"bhargav"}'
+			console.log(emp)
+	2. object as New keyword
+	=> Example, const emp = new Object()
+			const res = {"name":"bhargav"}
+			console.log(res)
+	3. object declared as constructor this keyword
+	=> Example, function emp(id,name,age){
+   				 this.id = 1001,
+    				this.name = "bhargav",
+    				this.age = 20
+ 			 }
+  			const emp1 = new emp(1001,"bhargav",20);
+  			console.log(emp1)
