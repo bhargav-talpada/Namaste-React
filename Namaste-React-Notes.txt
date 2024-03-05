@@ -109,6 +109,7 @@ Namaste React :-
 	-> Backend service, UI service, Authentication service, DB service, Notification service etc... all are microservices.
 	-> For each and every service we had a different project and this is known as saparation of consults and it follows single responsibility principle.
 	-> All services have a own port all services run on the own port.
+	-> React fast because its render cycle is very fast.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
