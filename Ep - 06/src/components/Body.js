@@ -1,17 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ResturentCart from "./ResturentCart";
 import resList from "../utils/apiData";
 
 
 const Body = () => {
 
-    const [resturentList, setResturentList] = useState(resList)
+    const [resturentList, setResturentList] = useState(resList);
+
+    useEffect(()=>{
+      console.log("useEffect called");
+    }, [])
 
     return(
         <div className="body">
             <div className="filter">
               <button className="filter-btn" onClick={() => {
-                const filterdList = resturentList.filter(res => res.info.avgRating > 4.3)
+                const filterdList = resturentList.filter(res => res.info.avgRating > 4.4)
                 setResturentList(filterdList)
               }} >Top Rated Resturents</button>
             </div>

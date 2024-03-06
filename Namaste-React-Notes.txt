@@ -110,6 +110,10 @@ Namaste React :-
 	-> For each and every service we had a different project and this is known as saparation of consults and it follows single responsibility principle.
 	-> All services have a own port all services run on the own port.
 	-> React fast because its render cycle is very fast.
+	=> useEffect() :
+		-> useEffect is a function it takes two arguments first argument is a callback function and secound argument is a dependnucy array.
+		-> When the body components is render as soon as rendering process is finished it will called callback function to passed in useEffect.
+		-> If you have to do something after rendering the components you write inside the useEffect.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
