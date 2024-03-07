@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ResturentCart from "./ResturentCart";
 import resList from "../utils/apiData";
+import Shimmer from "./ShimmerUI";
 
 
 const Body = () => {
@@ -20,11 +21,8 @@ const Body = () => {
       setResturentList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     }
 
-    if(resturentList.length === 0){
-      return <h1> Loading... </h1>
-    }
-
-    return(
+    //Conditional Rendering
+    return resturentList.length ===0 ? <Shimmer /> : (
         <div className="body">
             <div className="filter">
               <button className="filter-btn" onClick={() => {

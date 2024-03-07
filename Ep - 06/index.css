@@ -23,6 +23,12 @@
     margin: 10px;
     font-size: 20px;
 }
+.btnlogin{
+    width: 100px;
+    height: auto;
+    font-size: 20px;
+    cursor: pointer;
+}
 
 .resturent-carts{
     display: flex;
@@ -30,7 +36,6 @@
 }
 .res-carts{
     width: 200px;
-    padding: 10px;
     margin: 10px 9px;
     padding: 15px;
     border: 1px solid black;
@@ -49,4 +54,34 @@
     padding: 5px;
     margin: 10px;
     cursor: pointer;
+}
+
+.shimmer-btn-filter{
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+}
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-cards{
+    width: 200px;
+    height: 350px;
+    margin: 10px 9px;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+}
+.shimmer-h3{
+    width: 150px;
+    height: 30px;
+    border: 1px solid gray;
+}
+.shimmer-h4{
+    width: 100px;
+    height: 25px;
+    border: 1px solid gray;
 }
