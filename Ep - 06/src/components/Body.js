@@ -5,11 +5,24 @@ import resList from "../utils/apiData";
 
 const Body = () => {
 
-    const [resturentList, setResturentList] = useState(resList);
+    const [resturentList, setResturentList] = useState([]);
 
     useEffect(()=>{
-      console.log("useEffect called");
+      fetchData();
     }, [])
+
+    const fetchData = async () => {
+      const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.3038945&lng=70.80215989999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
+      const json = await data.json();
+      console.log(json);
+
+      //Optional Chaining
+      setResturentList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    }
+
+    if(resturentList.length === 0){
+      return <h1> Loading... </h1>
+    }
 
     return(
         <div className="body">
