@@ -115,7 +115,7 @@ Namaste React :-
 		-> When the body components is render as soon as rendering process is finished it will called callback function to passed in useEffect.
 		-> If you have to do something after rendering the components you write inside the useEffect.
 	-> fetch will return a promise.
-	-> To perform rendering base on conditions is known as conditional rendering.
+	-> To perform rendering based on conditions is known as conditional rendering.
 	-> We have use ternary operator to handle this condition.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
