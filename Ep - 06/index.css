@@ -50,11 +50,27 @@
     width: 200px;
     height: 130px;
 }
-
-.filter-btn{
+.filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding: 10px;
+}
+.searchinp{
+    font-size: 18px;
     padding: 5px;
-    margin: 10px;
+}
+.searchbtn{
+    font-size: 18px;
     cursor: pointer;
+    padding: 7px;
+    margin-left: 10px;
+}
+.filter-btn{
+    cursor: pointer;
+    font-size: 18px;
+    padding: 7px;
 }
 
 .shimmer-btn-filter{

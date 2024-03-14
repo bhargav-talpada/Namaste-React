@@ -25,6 +25,10 @@ const Body = () => {
     return resturentList.length === 0 ? <Shimmer /> : (
         <div className="body">
             <div className="filter">
+              <div className="search">
+                <input type="text" className="searchinp" placeholder="Search..."/>
+                <button className="searchbtn">Search</button>
+              </div>
               <button className="filter-btn" onClick={() => {
                 const filterdList = resturentList.filter(res => res.info.avgRating > 4.4)
                 setResturentList(filterdList)
