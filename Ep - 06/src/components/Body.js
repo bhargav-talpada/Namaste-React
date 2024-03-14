@@ -7,6 +7,8 @@ import Shimmer from "./ShimmerUI";
 const Body = () => {
 
     const [resturentList, setResturentList] = useState([]);
+    const [searchText, setSearchText] = useState("");
+    const [filterdResturent, setFilterdResturent] = useState([]);
 
     useEffect(()=>{
       fetchData();
@@ -15,10 +17,10 @@ const Body = () => {
     const fetchData = async () => {
       const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.3038945&lng=70.80215989999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
       const json = await data.json();
-      console.log(json);
 
       //Optional Chaining
       setResturentList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+      setFilterdResturent(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     }
 
     //Conditional Rendering
@@ -26,8 +28,11 @@ const Body = () => {
         <div className="body">
             <div className="filter">
               <div className="search">
-                <input type="text" className="searchinp" placeholder="Search..."/>
-                <button className="searchbtn">Search</button>
+                <input type="text" className="searchinp" placeholder="Search..." value={searchText} onChange={(e)=>{setSearchText(e.target.value)}}/>
+                <button className="searchbtn" onClick={()=>{
+                  const searchRestro = resturentList.filter(res => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
+                  setFilterdResturent(searchRestro)
+                }}>Search</button>
               </div>
               <button className="filter-btn" onClick={() => {
                 const filterdList = resturentList.filter(res => res.info.avgRating > 4.4)
@@ -59,7 +64,7 @@ const Body = () => {
                  */}
                  {/* and use map function to loop array (Secound way) */}
                 { 
-                  resturentList.map((resturent) => <ResturentCart key={resturent.info.id} resData={resturent} />)
+                  filterdResturent.map((resturent) => <ResturentCart key={resturent.info.id} resData={resturent} />)
                 }
             </div>
         </div>

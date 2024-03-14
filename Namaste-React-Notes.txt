@@ -99,6 +99,7 @@ Namaste React :-
 	-> React creates virtual DOM.
 	-> Actual DOM is are the tags. 
 	-> virtual DOM is representation of actual DOM.
+	-> virtual DOM is object representation of JSX.
 	-> React virtual DOM is a object.
 	-> Diff Algoritham : it finds difference between pre virtual DOM & updated virtual DOM.
 
@@ -117,6 +118,8 @@ Namaste React :-
 	-> fetch will return a promise.
 	-> To perform rendering based on conditions is known as conditional rendering.
 	-> We have use ternary operator to handle this condition.
+	-> Whenever state variables update, react triggers a Reconciliation cycle (re-render the component).
+	-> Reconciliation cycle means react finding diff between older virtual dom or updated virtual dom.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
