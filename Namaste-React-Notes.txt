@@ -120,6 +120,11 @@ Namaste React :-
 	-> We have use ternary operator to handle this condition.
 	-> Whenever state variables update, react triggers a Reconciliation cycle (re-render the component).
 	-> Reconciliation cycle means react finding diff between older virtual dom or updated virtual dom.
+
+==> Ep - 07 :-
+
+	
+
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
