@@ -123,7 +123,18 @@ Namaste React :-
 
 ==> Ep - 07 :-
 
-	
+	-> Every time my component is render by useEffect called.	
+	-> If no dependnucy array useEffect is called on every render.
+	-> If dependnucy array is empty [] useEffect is called on initial render (just once).
+	-> Cannot create a useState variable outside of body.
+	-> Never create your useState inside of conditions and looping statments.
+	=> Router :
+		-> Using router you should navigate one page to other page.
+		-> createBrowserRouter - to create router for our app
+		-> RouterProvider - to provide router configuration of our app
+		-> useRouteError - you can get more information about the error
+		-> outlet - it will fill children according to path inside of parent
+		-> outlet will render child element in the parent element
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
