@@ -135,7 +135,6 @@ Namaste React :-
 		-> useRouteError - you can get more information about the error
 		-> outlet - it will fill children according to path inside of parent
 		-> outlet will render child element in the parent element
-
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
