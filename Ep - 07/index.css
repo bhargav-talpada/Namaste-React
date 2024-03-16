@@ -103,3 +103,14 @@
     height: 25px;
     border: 1px solid gray;
 }
+.shimmer-filter{
+    display: flex;
+    justify-content: space-between;
+}
+.shimmer-input{
+    padding: 5px;
+    background-color: #f0f0f0;
+    height: 20px;
+    margin: 10px;
+    width: 220px;
+}

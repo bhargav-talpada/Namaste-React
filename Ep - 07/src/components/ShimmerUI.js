@@ -1,7 +1,11 @@
 const Shimmer = () => {
     return(
-        <div >
-            <button className="shimmer-btn-filter"></button>
+        <div>
+            <div className="shimmer-filter">
+                <input type="text" className="shimmer-input" />
+                
+                <button className="shimmer-btn-filter"></button>
+            </div>
             <div className="shimmer-container">
                 <div className="shimmer-cards">
                     <img className="cart-img" />
