@@ -135,6 +135,9 @@ Namaste React :-
 		-> useRouteError - you can get more information about the error
 		-> outlet - it will fill children according to path inside of parent
 		-> outlet will render child element in the parent element
+		-> Link - react-router-dom giver special component Link but behind the seen Link uses a anchor tag.
+		-> Link - Link does not refresh your page.
+		-> Page does not refresh because using react we can create single page application.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.

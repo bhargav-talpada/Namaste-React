@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import ResturentCart from "./ResturentCart";
 import resList from "../utils/apiData";
 import Shimmer from "./ShimmerUI";
+import { Link } from "react-router-dom";
 
 
 const Body = () => {
@@ -64,7 +65,9 @@ const Body = () => {
                  */}
                  {/* and use map function to loop array (Secound way) */}
                 { 
-                  filterdResturent.map((resturent) => <ResturentCart key={resturent.info.id} resData={resturent} />)
+                  filterdResturent.map((resturent) => 
+                    <Link to={"/restaurents/" + resturent.info.id} key={resturent.info.id} ><ResturentCart resData={resturent} /></Link>
+                  )
                 }
             </div>
         </div>
