@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import Shimmer from '../components/ShimmerUI'
 import { useParams } from 'react-router-dom'
 import { MENU_API } from "../utils/constants";
-import MenuBody from "./MenuBody";
 
 const ResturentMenu = () => {
 
@@ -23,7 +22,7 @@ const ResturentMenu = () => {
     if(resInfo === null) return <Shimmer />
 
     const { name, costForTwoMessage, cuisines, areaName, avgRating } = resInfo?.cards[0]?.card?.card?.info;
-    // const {itemCards} = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
+    const {itemCards} = resInfo?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
 
     return(
         <div className="menu">
@@ -33,17 +32,12 @@ const ResturentMenu = () => {
             <h3>{avgRating}</h3>
             <div>
                 <h2>Recommended</h2>
-                {/* {
+                {
                     itemCards.map(item => 
                         <h4 key={item.card.info.id}>
                             {item.card.info.name} - ₹{item.card.info.defaultPrice / 100 || item.card.info.price / 100}
                         </h4>
                     )
-                } */}
-                {
-                    resInfo.map((resMenu) => {
-                        <MenuBody menuData={resMenu} />
-                    })
                 }
             </div>
         </div>
