@@ -5,11 +5,6 @@ import { Link } from "react-router-dom";
 export const Header = () => {
 
     const [btnName, setBtnName] = useState('LogIn')
-    console.log("header render");
-
-    useEffect(()=>{
-        console.log("useeffect");
-    },[])
     
     return(
         <div className="header">
