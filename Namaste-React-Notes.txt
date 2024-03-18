@@ -65,7 +65,7 @@ Namaste React :-
 	-> Props are normal argument.
 	=> Config-driven UI :It is a technique that allows you to create dynamic and customizable UIs without hard coding them. 
 	-> data?.data = it's known as optional chaining.
-	-> Whwnever you are doing mapping and looping you wite key of element.
+	-> Whwnever you are doing mapping and looping you write key of element.
 	-> You dont't have an unique key you write index as key but it's not recommended. 
 
 ==> Ep - 05 :- 
@@ -135,7 +135,7 @@ Namaste React :-
 		-> useRouteError - you can get more information about the error
 		-> outlet - it will fill children according to path inside of parent
 		-> outlet will render child element in the parent element
-		-> Link - react-router-dom giver special component Link but behind the seen Link uses a anchor tag.
+		-> Link - react-router-dom gives special component Link but behind the seen Link uses a anchor tag.
 		-> Link - Link does not refresh your page.
 		-> Page does not refresh because using react we can create single page application.
 -------------------------------------------------------------------------------------------------------------------------------------------------
