@@ -143,7 +143,9 @@ Namaste React :-
 
 	=> Classbased Components - 
 		-> Classbased component is a older ways to create component in react.
-		-> 
+		-> Classbased component is a normal js class.
+		-> Classbased component is a class it extends with React.Component and it has render method that return some piece of jsx.
+		-> React.Component is a class which is gives by a React.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.

@@ -115,3 +115,10 @@
     margin: 10px;
     width: 220px;
 }
+.user-card{
+    padding: 10px;
+    border: 1px solid black;
+    width: 400px;
+    height: 200px;
+    margin-top: 5px;
+}
