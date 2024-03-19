@@ -138,6 +138,13 @@ Namaste React :-
 		-> Link - react-router-dom gives special component Link but behind the seen Link uses a anchor tag.
 		-> Link - Link does not refresh your page.
 		-> Page does not refresh because using react we can create single page application.
+
+==> Ep - 08 :-
+
+	=> Classbased Components - 
+		-> Classbased component is a older ways to create component in react.
+		-> 
+
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
