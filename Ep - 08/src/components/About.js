@@ -6,7 +6,9 @@ const About = () => {
         <div>
             <h1>About</h1>
             <User name="Bhargav Talpada" location="Rajkot, Gujarat, India" contact="72039 13274" email="bhargavtalpada2004@gmail.com" />
-            <UserClass name="Bhargav Talpada" location="Rajkot, Gujarat, India" contact="72039 13274" email="bhargavtalpada2004@gmail.com"   />
+            <UserClass name="child 1" location="Rajkot, Gujarat, India" contact="72039 13274" email="bhargavtalpada2004@gmail.com"   />
+            <UserClass name="child 2" location="Rajkot, Gujarat, India" contact="72039 13274" email="bhargavtalpada2004@gmail.com"   />
+            <UserClass name="child 3" location="Rajkot, Gujarat, India" contact="72039 13274" email="bhargavtalpada2004@gmail.com"   />
         </div>
     )
 }

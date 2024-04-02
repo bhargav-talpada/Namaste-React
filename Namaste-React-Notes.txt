@@ -147,6 +147,17 @@ Namaste React :-
 		-> Classbased component is a class it extends with React.Component and it has render method that return some piece of jsx.
 		-> React.Component is a class which is gives by a React.
 		-> To update your stste variable using of this.setState() function.
+		-> The first thing is Whenever class load a constructor is called.
+		-> In Classbased component first constructor called and after it render method called.
+		-> First parent constructor call after it parent render method call after it child constructor call after it child render method 
+		   call this is life cycle of Classbased component.
+		-> componentDidMount() : if you have componentDidMount() in only the child class component the life cycle is, 
+		    child constructor call -> child render() call -> componentDidMount() call.
+		-> If you have componentDidMount() in both parent or child the life cycle like this,
+			parent constructor call -> parent render() call -> child constructor call -> child render() call -> child componentDidMount() call -> parent componentDidMount() call.
+		-> Life cycle has a 2 phase - 
+				1. Render Phase : Render phase has a constructor & render.
+				2. Commit Phase : In this phase actually updates the DOM and then componentDidMount.
 	-> Invoking Functional Component that means mounting or loading the functional components into the web page.
 	-> Never update your state variables directly.
 
