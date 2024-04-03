@@ -158,6 +158,10 @@ Namaste React :-
 		-> Life cycle has a 2 phase - 
 				1. Render Phase : Render phase has a constructor & render.
 				2. Commit Phase : In this phase actually updates the DOM and then componentDidMount.
+		-> componentDidUpdate : This method is updating the DOM in response to prop or state changes.
+		-> componentWillUnmount : React will call it before your component is removed (unmounted) from the screen
+		-> Mount : Component will shown in the web page.
+		-> Unmount : Component will disapear in the web page.
 	-> Invoking Functional Component that means mounting or loading the functional components into the web page.
 	-> Never update your state variables directly.
 

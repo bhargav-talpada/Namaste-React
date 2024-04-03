@@ -48,3 +48,22 @@
 # 2 types of routing
 - Client side routing
 - Server side routing
+
+# Life Cycle of react
+- 3 phase of life cycle
+    1. Mounting
+        - Constructor call (dummy data)
+        - Render() call (dummy data)
+        - HTML (dummy data)
+        - ComponentDidMount
+        - API call 
+        - this.setState -> state variable is updateed
+
+    2. Updating
+        - Render() call (API data)
+        - HTML (API data)
+        - ComponentsDidUpdate
+
+    3. Unmounting
+        - data removed from the screen
+        - ComponentWillUnmount

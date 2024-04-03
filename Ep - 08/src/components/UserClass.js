@@ -4,32 +4,37 @@ class UserClass extends React.Component {
 
     constructor(props){
         super(props);
-        
+        console.log("Constructor");
         this.state = {
-            count: 1,
-            count1: 2,
+            userInfo:{
+                name: "dummuy",
+                location: "no",
+                email: "bhargav@gmail.com",
+                contact: "7203913274",
+            }
         }
-        console.log(this.props.name + 'Constructor');
     }
 
-    componentDidMount(){
-        console.log(this.props.name + 'component did mount');
+    async componentDidMount(){
+        const gitUser = await fetch("https://api.github.com/users/Bhuro11");
+        const json = await gitUser.json();
+        this.setState({
+            userInfo: json,
+        })
+        console.log(json);
     }
-
+    componentDidUpdate(){
+        console.log("ComponentDidUpdate");
+    }
+    componentWillUnmount(){
+        console.log("componentwillunmount");
+    }
     render(){
-        const {name, location, contact, email} = this.props;
-        const {count, count1} = this.state;
-        console.log(this.props.name + 'Render');
+        // const { contact, email} = this.props;
+        const {name, location , contact, email} = this.state.userInfo;
+        console.log("Render");
         return(
             <div className="user-card">
-                <h3>Count : {count}</h3>
-                <h3>Count1 : {count1}</h3>
-                <button onClick={()=>{
-                    this.setState({
-                        count: this.state.count + 1,
-                        count1: this.state.count1 + 2
-                    })
-                }}>Count</button>
                 <h1>Name : {name}</h1>
                 <h3>Location : {location}</h3>
                 <h3>Contact : {contact}</h3>
