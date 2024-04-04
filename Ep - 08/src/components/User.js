@@ -1,7 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const User = (props) => {
     const {name, location, contact, email} = props;
+    useEffect(()=>{
+        const timer = setInterval(() => {
+            console.log("functional component");
+        }, 1000);
+        console.log('useeffect');
+        return()=>{
+            clearInterval(timer);
+            console.log('useeffect return');
+        }
+    },[])
+    console.log('render');
     return(
         <div className="user-card">
             <h1>Name : {name}</h1>

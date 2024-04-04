@@ -21,18 +21,22 @@ class UserClass extends React.Component {
         this.setState({
             userInfo: json,
         })
-        console.log(json);
+
+        this.timer = setInterval(() => {
+            console.log("Classbased components");    
+        }, 1000);
     }
     componentDidUpdate(){
-        console.log("ComponentDidUpdate");
+        // console.log("ComponentDidUpdate");
     }
     componentWillUnmount(){
-        console.log("componentwillunmount");
+        // console.log("componentwillunmount");
+        clearInterval(this.timer);
     }
     render(){
         // const { contact, email} = this.props;
         const {name, location , contact, email} = this.state.userInfo;
-        console.log("Render");
+        // console.log("Render");
         return(
             <div className="user-card">
                 <h1>Name : {name}</h1>

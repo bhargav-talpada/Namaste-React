@@ -160,8 +160,10 @@ Namaste React :-
 				2. Commit Phase : In this phase actually updates the DOM and then componentDidMount.
 		-> componentDidUpdate : This method is updating the DOM in response to prop or state changes.
 		-> componentWillUnmount : React will call it before your component is removed (unmounted) from the screen
-		-> Mount : Component will shown in the web page.
+		-> Mount : Component will shown in the web page and it process of create instace of component & insert into DOM.
 		-> Unmount : Component will disapear in the web page.
+		-> After one render componentDidMount will call and after every subsequent render componentDidUpdate will call.
+		-> You will write return in useEffect() it will work after the removed component from the screen & it will clear all intervals.
 	-> Invoking Functional Component that means mounting or loading the functional components into the web page.
 	-> Never update your state variables directly.
 
