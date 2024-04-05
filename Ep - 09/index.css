@@ -1,0 +1,123 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.logo{
+    width: 150px;
+    margin-top: 5px;
+}
+.nav-items ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0 50px;
+}
+.nav-items ul li{
+    padding: 10px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.btnlogin{
+    width: 100px;
+    height: auto;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.resturent-carts{
+    display: flex;
+    flex-wrap: wrap;
+}
+.res-carts{
+    width: 200px;
+    height: 350px;
+    margin: 10px 9px;
+    padding: 15px;
+    border: 1px solid black;
+    transition: scale 0.3s ease-in;
+}
+.res-carts:hover{
+    scale: 0.9;
+}
+.cart-img{
+    cursor: pointer;
+    width: 200px;
+    height: 130px;
+}
+.filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    padding: 10px;
+}
+.searchinp{
+    font-size: 18px;
+    padding: 5px;
+}
+.searchbtn{
+    font-size: 18px;
+    cursor: pointer;
+    padding: 7px;
+    margin-left: 10px;
+}
+.filter-btn{
+    cursor: pointer;
+    font-size: 18px;
+    padding: 7px;
+}
+
+.shimmer-btn-filter{
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    width: 150px;
+    height: 30px;
+}
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-cards{
+    width: 200px;
+    height: 350px;
+    margin: 10px 9px;
+    padding: 15px;
+    border: 1px solid black;
+    background-color: #f0f0f0;
+}
+.shimmer-h3{
+    width: 150px;
+    height: 30px;
+    border: 1px solid gray;
+}
+.shimmer-h4{
+    width: 100px;
+    height: 25px;
+    border: 1px solid gray;
+}
+.shimmer-filter{
+    display: flex;
+    justify-content: space-between;
+}
+.shimmer-input{
+    padding: 5px;
+    background-color: #f0f0f0;
+    height: 20px;
+    margin: 10px;
+    width: 220px;
+}
+.user-card{
+    padding: 10px;
+    border: 1px solid black;
+    width: 400px;
+    margin-top: 5px;
+}
