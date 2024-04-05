@@ -1,18 +1,12 @@
 import { useEffect, useState } from "react";
+import useUserData from "../utils/useUserData";
 
 const User = (props) => {
-    const {name, location, contact, email} = props;
-    useEffect(()=>{
-        const timer = setInterval(() => {
-            console.log("functional component");
-        }, 1000);
-        console.log('useeffect');
-        return()=>{
-            clearInterval(timer);
-            console.log('useeffect return');
-        }
-    },[])
-    console.log('render');
+    // const {name, location, contact, email} = props;
+    
+    const userData = useUserData();
+    
+    const {name, location, contact, email} = userData;
     return(
         <div className="user-card">
             <h1>Name : {name}</h1>

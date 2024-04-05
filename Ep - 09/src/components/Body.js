@@ -3,6 +3,7 @@ import ResturentCart from "./ResturentCart";
 import resList from "../utils/apiData";
 import Shimmer from "./ShimmerUI";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 
 const Body = () => {
@@ -23,6 +24,12 @@ const Body = () => {
       setResturentList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
       setFilterdResturent(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     }
+
+    const onlineStatus = useOnlineStatus();
+    if(onlineStatus === false)
+      return(
+        <h1 className="onlinestatus">Your Internet Connection is Low. Please, check your internet connection.</h1>
+      ) 
 
     //Conditional Rendering
     return resturentList.length === 0 ? <Shimmer /> : (

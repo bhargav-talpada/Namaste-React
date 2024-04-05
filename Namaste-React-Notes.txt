@@ -168,7 +168,10 @@ Namaste React :-
 	-> Never update your state variables directly.
 
 ==> Ep - 09 : 
-	-> 
+	=> Single Responsibility Principle : You have a single class or you have single function or you have a single identity that should have a single responsibility.
+	=> Modularity : You break down of your code in different different module.  
+	=> Custom Hooks : You can create your own hooks.
+	-> In custom hooks you encapsulate statefull logic, reuse in multiple component.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.

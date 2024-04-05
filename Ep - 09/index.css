@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities; */
 
-
+*{
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
 .header{
     display: flex;
     justify-content: space-between;
@@ -120,4 +124,8 @@
     border: 1px solid black;
     width: 400px;
     margin-top: 5px;
+}
+.onlinestatus{
+    color: red;
+    font-size: 30px;
 }
