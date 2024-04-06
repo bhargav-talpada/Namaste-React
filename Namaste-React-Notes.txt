@@ -172,6 +172,9 @@ Namaste React :-
 	=> Modularity : You break down of your code in different different module.  
 	=> Custom Hooks : You can create your own hooks.
 	-> In custom hooks you encapsulate statefull logic, reuse in multiple component.
+	-> If you create your custom hooks you must write file name with use keyword.
+	-> For Example, useOnlineStatus.js
+	=> Code Spliting : To split your code in small chunk.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.

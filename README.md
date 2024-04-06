@@ -67,3 +67,9 @@
     3. Unmounting
         - data removed from the screen
         - ComponentWillUnmount
+
+# Custom Hooks
+- You create your own hook
+- Must write statefully logical code, api calling, etc..
+- File name start with use keyword
+- eg, useOnlineStatus.js

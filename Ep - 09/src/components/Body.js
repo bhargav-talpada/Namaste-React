@@ -4,6 +4,7 @@ import resList from "../utils/apiData";
 import Shimmer from "./ShimmerUI";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
+import { RiWifiOffLine } from "react-icons/ri";
 
 
 const Body = () => {
@@ -28,7 +29,10 @@ const Body = () => {
     const onlineStatus = useOnlineStatus();
     if(onlineStatus === false)
       return(
-        <h1 className="onlinestatus">Your Internet Connection is Low. Please, check your internet connection.</h1>
+        <div className="status">
+          <RiWifiOffLine className="offline" />
+          <h1 className="onlinestatus">Oops Please, check your internet connection.</h1>
+        </div>
       ) 
 
     //Conditional Rendering
