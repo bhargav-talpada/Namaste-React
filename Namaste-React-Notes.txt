@@ -171,7 +171,7 @@ Namaste React :-
 	=> Single Responsibility Principle : You have a single class or you have single function or you have a single identity that should have a single responsibility.
 	=> Modularity : You break down of your code in different different module.  
 	=> Custom Hooks : You can create your own hooks.
-	-> In custom hooks you encapsulate statefull logic, reuse in multiple component.
+	-> In custom hooks you write encapsulate statefull logic, reuse in multiple component.
 	-> If you create your custom hooks you must write file name with use keyword.
 	-> For Example, useOnlineStatus.js
 	=> Code Spliting : To split your code in small chunk.
@@ -179,8 +179,10 @@ Namaste React :-
 		application when it is actually required.
 	-> when you load your component using lazy().
 	-> In lazy() you can import or pass your component full path.
-	-> Example : const Grocery = lazy(() => { import("./components/Grocery") })
 	-> Lazy loading is split your code into multiple JS bundles.
+	-> Example : const Grocery = lazy(() => { import("./components/Grocery") })
+	-> You will write Suspense() with lazy();
+	-> element: <Suspense fallback={<h1>Loading...</h1>}><Grocery /></Suspense>
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
