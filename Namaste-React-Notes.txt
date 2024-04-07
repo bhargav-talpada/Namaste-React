@@ -175,6 +175,12 @@ Namaste React :-
 	-> If you create your custom hooks you must write file name with use keyword.
 	-> For Example, useOnlineStatus.js
 	=> Code Spliting : To split your code in small chunk.
+	=> Lazy Loading : React allows you to split your code into smaller chunks, loading only the code that is needed for a particular part of your 
+		application when it is actually required.
+	-> when you load your component using lazy().
+	-> In lazy() you can import or pass your component full path.
+	-> Example : const Grocery = lazy(() => { import("./components/Grocery") })
+	-> Lazy loading is split your code into multiple JS bundles.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.

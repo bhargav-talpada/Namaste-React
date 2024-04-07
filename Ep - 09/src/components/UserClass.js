@@ -23,7 +23,7 @@ class UserClass extends React.Component {
         })
 
         this.timer = setInterval(() => {
-            console.log("Classbased components");    
+            // console.log("Classbased components");    
         }, 1000);
     }
     componentDidUpdate(){

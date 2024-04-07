@@ -73,3 +73,8 @@
 - Must write statefully logical code, api calling, etc..
 - File name start with use keyword
 - eg, useOnlineStatus.js
+
+# Important topics
+- Chunking
+- Code Spliting
+- Lazy Loading
