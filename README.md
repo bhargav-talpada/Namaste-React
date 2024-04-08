@@ -78,3 +78,8 @@
 - Chunking
 - Code Spliting
 - Lazy Loading
+
+# Tailwind Css
+- tailwind.config.js : configuration of tailwind
+- postcssrc : configuration of css
+- npm install -D tailwindcss

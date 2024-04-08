@@ -185,7 +185,11 @@ Namaste React :-
 	-> element: <Suspense fallback={<h1>Loading...</h1>}><Grocery /></Suspense>
 
 ==> Ep - 10 : 
-	
+	-> To many ways to style your component like : Normal CSS, Saas, Scss, Muterial UI, Chakra UI, Bootstrap, Ant-Design, Tailwind Css.
+	=> Tailwind Css : is a framework of css.
+	-> To install - npm i -D tailwindcss postcss
+	-> tailwind.config.js is configuration of tailwind and postcssrc is configuration of css.
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
