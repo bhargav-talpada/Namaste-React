@@ -184,6 +184,9 @@ Namaste React :-
 	-> You will write Suspense() with lazy();
 	-> element: <Suspense fallback={<h1>Loading...</h1>}><Grocery /></Suspense>
 
+==> Ep - 10 : 
+	
+
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
