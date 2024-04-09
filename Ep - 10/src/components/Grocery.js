@@ -1,7 +1,7 @@
 const Grocery = () => {
     return(
         <>
-            <h1>
+            <h1 className="m-4 p-4 text-xl">
                 {""}
                 Our Grocery Online Store
             </h1>

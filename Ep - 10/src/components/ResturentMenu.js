@@ -25,11 +25,11 @@ const ResturentMenu = () => {
     var {itemCards} = resInfo?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card?.card;
 
     return(
-        <div className="menu">
-            <h1>{name}</h1>
-            <p>{cuisines.join(", ")} - {costForTwoMessage}</p> 
-            <p>{areaName}</p>
-            <h3>{avgRating}</h3>
+        <div className="menu m-4 p-4 ">
+            <h1 className='text-xl font-bold'>{name}</h1>
+            <p className='text-xs'>{cuisines.join(", ")} - {costForTwoMessage}</p> 
+            <p className='text-xs'>{areaName}</p>
+            <h3 className='text-xs'>{avgRating}</h3>
             <div>
                 <h2>Recommended</h2>
                 {

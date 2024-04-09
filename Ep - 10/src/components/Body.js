@@ -38,20 +38,22 @@ const Body = () => {
     //Conditional Rendering
     return resturentList.length === 0 ? <Shimmer /> : (
         <div className="body">
-            <div className="filter">
-              <div className="search">
-                <input type="text" className="searchinp" placeholder="Search..." value={searchText} onChange={(e)=>{setSearchText(e.target.value)}}/>
-                <button className="searchbtn" onClick={()=>{
+            <div className="filter flex justify-between items-center">
+              <div className="search m-2 p-3">
+                <input type="text" className="searchinp p-2 border border-solid border-black " placeholder="Search..." value={searchText} onChange={(e)=>{setSearchText(e.target.value)}}/>
+                <button className="searchbtn border border-green-300 rounded-md px-5 py-2 bg-green-200 m-4 cursor-pointer" onClick={()=>{
                   const searchRestro = resturentList.filter(res => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
                   setFilterdResturent(searchRestro)
                 }}>Search</button>
               </div>
-              <button className="filter-btn" onClick={() => {
-                const filterdList = resturentList.filter(res => res.info.avgRating > 4.4)
-                setResturentList(filterdList)
-              }} >Top Rated Resturents</button>
+              <div>
+                <button className="filter-btn px-5 py-2 mr-3 border border-gray-200 rounded-md bg-gray-200 cursor-pointer" onClick={() => {
+                  const filterdList = resturentList.filter(res => res.info.avgRating > 4.4)
+                  setResturentList(filterdList)
+                }} >Top Rated Resturents</button>
+              </div>
             </div>
-            <div className="resturent-carts">
+            <div className="resturent-carts grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
                 {/* First way 
                 <ResturentCart resData={resList[0]} />
                 <ResturentCart resData={resList[1]} />
@@ -77,7 +79,7 @@ const Body = () => {
                  {/* and use map function to loop array (Secound way) */}
                 { 
                   filterdResturent.map((resturent) => 
-                    <Link to={"/restaurents/" + resturent.info.id} key={resturent.info.id} ><ResturentCart resData={resturent} /></Link>
+                    <Link to={"/restaurents/" + resturent.info.id} key={resturent.info.id} ><ResturentCart resData={resturent}  /></Link>
                   )
                 }
             </div>
