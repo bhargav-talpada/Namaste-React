@@ -29,9 +29,9 @@ const Body = () => {
     const onlineStatus = useOnlineStatus();
     if(onlineStatus === false)
       return(
-        <div className="status">
-          <RiWifiOffLine className="offline" />
-          <h1 className="onlinestatus">Oops Please, check your internet connection.</h1>
+        <div className="status h-screen w-screen flex flex-col justify-center items-center">
+          <RiWifiOffLine className="offline text-6xl" />
+          <h1 className="onlinestatus text-4xl mt-4 text-red-500">Oops Please, check your internet connection.</h1>
         </div>
       ) 
 

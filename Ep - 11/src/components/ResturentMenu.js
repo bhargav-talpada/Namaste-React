@@ -26,10 +26,10 @@ const ResturentMenu = () => {
 
     return(
         <div className="menu m-4 p-4 ">
-            <h1 className='text-xl font-bold'>{name}</h1>
-            <p className='text-xs'>{cuisines.join(", ")} - {costForTwoMessage}</p> 
-            <p className='text-xs'>{areaName}</p>
-            <h3 className='text-xs'>{avgRating}</h3>
+            <h1 className='font-bold text-3xl m-4'>{name}</h1>
+            <p className='text-xl m-2'>{cuisines.join(", ")} - {costForTwoMessage}</p> 
+            <p className='text-xl m-2'>{areaName}</p>
+            <h3 className='text-xl m-2'>{avgRating}</h3>
             <div>
                 <h2>Recommended</h2>
                 {
