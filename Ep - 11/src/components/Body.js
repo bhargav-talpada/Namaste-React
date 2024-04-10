@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import ResturentCart from "./ResturentCart";
+import ResturentCart, { promotedLabel } from "./ResturentCart";
 import resList from "../utils/apiData";
 import Shimmer from "./ShimmerUI";
 import { Link } from "react-router-dom";
@@ -13,6 +13,8 @@ const Body = () => {
     const [searchText, setSearchText] = useState("");
     const [filterdResturent, setFilterdResturent] = useState([]);
 
+    const ResturentCartPromoted = promotedLabel(ResturentCart);
+
     useEffect(()=>{
       fetchData();
     }, [])
@@ -24,6 +26,7 @@ const Body = () => {
       //Optional Chaining
       setResturentList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
       setFilterdResturent(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+      console.log(filterdResturent);
     }
 
     const onlineStatus = useOnlineStatus();
@@ -79,7 +82,11 @@ const Body = () => {
                  {/* and use map function to loop array (Secound way) */}
                 { 
                   filterdResturent.map((resturent) => 
-                    <Link to={"/restaurents/" + resturent.info.id} key={resturent.info.id} ><ResturentCart resData={resturent}  /></Link>
+                    <Link to={"/restaurents/" + resturent.info.id} key={resturent.info.id} >
+                      {
+                        resturent.info.promoted ? <ResturentCartPromoted resData={resturent} /> : <ResturentCart resData={resturent}  />
+                      }
+                    </Link>
                   )
                 }
             </div>

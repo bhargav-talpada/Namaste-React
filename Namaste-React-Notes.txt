@@ -193,7 +193,8 @@ Namaste React :-
 
 ==> Ep - 11 :-
 
-
+	=> Higher Order Component (HOC) : HOC is a function that takes a component and return a component.
+	-> HOC return component and that component are enhanced version of inputed component.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.

@@ -15,4 +15,17 @@ const ResturentCart = (props) =>{
     )
 }
 
+// Higher Order Components
+
+export const promotedLabel = (ResturentCart) => {
+    return (props) => {
+        return (
+            <div>
+                <label className="absolute bg-gray-700 text-white p-2 m-2 rounded-md">Promoted</label>
+                <ResturentCart {...props} />
+            </div>
+        )
+    }
+}
+
 export default ResturentCart;

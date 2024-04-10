@@ -83,3 +83,9 @@
 - tailwind.config.js : configuration of tailwind
 - postcssrc : configuration of css
 - npm install -D tailwindcss
+- npx tailwindcss init
+
+# HOC
+- Higher Order Component
+- It Takes components as a input
+- And return components
