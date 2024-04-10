@@ -167,7 +167,7 @@ Namaste React :-
 	-> Invoking Functional Component that means mounting or loading the functional components into the web page.
 	-> Never update your state variables directly.
 
-==> Ep - 09 : 
+==> Ep - 09 :- 
 	=> Single Responsibility Principle : You have a single class or you have single function or you have a single identity that should have a single responsibility.
 	=> Modularity : You break down of your code in different different module.  
 	=> Custom Hooks : You can create your own hooks.
@@ -184,11 +184,15 @@ Namaste React :-
 	-> You will write Suspense() with lazy();
 	-> element: <Suspense fallback={<h1>Loading...</h1>}><Grocery /></Suspense>
 
-==> Ep - 10 : 
+==> Ep - 10 :-
 	-> To many ways to style your component like : Normal CSS, Saas, Scss, Muterial UI, Chakra UI, Bootstrap, Ant-Design, Tailwind Css.
 	=> Tailwind Css : is a framework of css.
-	-> To install - npm i -D tailwindcss postcss
+	-> To install - npm i -D tailwindcss postcss 
+	-> npx tailwindcss init
 	-> tailwind.config.js is configuration of tailwind and postcssrc is configuration of css.
+
+==> Ep - 11 :-
+
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
