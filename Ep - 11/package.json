@@ -2,6 +2,7 @@
   "name": "ep---11",
   "version": "1.0.0",
   "description": "This is a Namaste React Episode Number 11",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",

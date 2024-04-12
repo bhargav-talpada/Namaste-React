@@ -7,11 +7,9 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import PageNotFound from "./components/PageNotFound";
 import ResturentMenu from "./components/ResturentMenu";
-// import Grocery from "./components/Grocery";
 
 
 const Grocery = lazy(() => import("./components/Grocery") );
-// const About = lazy(() => import("./components/About"));
 
 const App = () => {
     return(

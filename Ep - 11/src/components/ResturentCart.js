@@ -5,7 +5,7 @@ const ResturentCart = (props) =>{
     const {resData} = props;
     const {cloudinaryImageId, name, cuisines, avgRating, costForTwo} = resData?.info;
     return(
-        <div className="res-carts m-4 p-4 w-60 h-96 bg-gray-200 rounded-md hover:bg-gray-400" >
+        <div className="res-carts m-4 p-4 w-60 h-96 bg-gray-100 rounded-md transition-all duration-700 hover:scale-110 hover:bg-gray-300" >
             <img src={REST_IMG_URL+cloudinaryImageId} className="cart-img rounded-lg w-full h-32" />
             <h3 className="font-bold py-4 text-xl">{name}</h3>
             <h4>{cuisines.join(", ")}</h4>
