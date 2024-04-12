@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import useUserData from "../utils/useUserData";
 
 const User = (props) => {
