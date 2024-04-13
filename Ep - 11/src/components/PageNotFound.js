@@ -7,10 +7,10 @@ const PageNotFound = () => {
 
     return(
         <div className='m-4 p-4'>
-            <h1 className='text-xl'>Oops!!</h1>
-            <h2 className='text-xs'>Something Went Wrong</h2>
-            <h2 className='text-xs'>{err.status} {err.statusText}</h2>
-            <h2 className='text-xs'>{err.error.message}</h2>
+            <h1 className='text-2xl'>Oops!!</h1>
+            <h2 className='text-xl'>Something Went Wrong</h2>
+            <h2 className='text-xl'>{err.status} {err.statusText}</h2>
+            <h2 className='text-xl'>{err.error.message}</h2>
         </div>
     )
 }

@@ -26,7 +26,7 @@ const Body = () => {
       //Optional Chaining
       setResturentList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
       setFilterdResturent(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-      console.log(filterdResturent);
+      console.log(resturentList);
     }
 
     const onlineStatus = useOnlineStatus();
