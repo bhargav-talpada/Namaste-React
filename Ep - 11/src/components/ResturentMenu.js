@@ -3,12 +3,14 @@ import useResturentMenu from '../utils/useResturentMenu';
 import { useParams } from 'react-router-dom'
 import { MdStars } from "react-icons/md";
 import RestaurantCategory from './RestaurantCategory';
-
+import { useState } from 'react';
 const ResturentMenu = () => {
 
     const {resId} = useParams();
 
     const resInfo = useResturentMenu(resId);
+
+    const [showIndex, setShowIndex] = useState(0);
 
     if(resInfo === null) return <Shimmer />
 
@@ -28,7 +30,13 @@ const ResturentMenu = () => {
             <p className='text-lg m-2 text-gray-400'>{areaName}</p>
             {/* Categories accordians */}
             {
-                categories.map((category) => <RestaurantCategory key={category?.card?.card?.title} data={category?.card?.card} />)
+                categories.map((category, index) => 
+                    <RestaurantCategory 
+                        key={category?.card?.card?.title} 
+                        data={category?.card?.card} 
+                        showItems={index == showIndex ? true : false}
+                    />
+                )
             }
         </div>
     )
