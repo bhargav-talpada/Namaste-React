@@ -196,6 +196,7 @@ Namaste React :-
 	=> Higher Order Component (HOC) : HOC is a function that takes a component and return a component.
 	-> HOC return component and that component are enhanced version of inputed component.
 	=> useContext() : You can pass data into other component.
+	-> useContext handle state and every time state variable change modify the context data.
 	-> create useContext using this createContext().
 	-> You can write data in useContext file in json format.
 	-> example - const const UserContext = createContext({
@@ -208,7 +209,12 @@ Namaste React :-
 		2. consumer - 	<UserContext.Consumer>
 							{({loggedInUser}) => <h1>{loggedInUser}</h1>}
 						</UserContext.Consumer>
+		-> Classbased component does not have a hooks to use consumer to access useContext data.
+		-> consumer takes a callback function and this function gives you a access od context.
+		-> You can use consumer a multiple time.
 	-> I will pass new context information in my app using context Provider.
+	-> You can also update your useContext value using context Provider.
+	-> You may also create nested context Provider.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.

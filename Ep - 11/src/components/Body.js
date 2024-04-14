@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import ResturentCart, { promotedLabel } from "./ResturentCart";
-import resList from "../utils/apiData";
 import Shimmer from "./ShimmerUI";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { RiWifiOffLine } from "react-icons/ri";
+import UserContext from "../utils/UserContext";
 
 
 const Body = () => {
@@ -38,6 +38,8 @@ const Body = () => {
         </div>
       ) 
 
+      const {loggedInUser,setUserName} = useContext(UserContext);
+
     //Conditional Rendering
     return resturentList.length === 0 ? <Shimmer /> : (
         <div className="body">
@@ -46,17 +48,34 @@ const Body = () => {
                 <input type="text" className="searchinp p-2 border border-solid border-black " placeholder="Search..." value={searchText} onChange={(e)=>{setSearchText(e.target.value)}}/>
                 <button className="searchbtn border border-green-300 rounded-md px-5 py-2 bg-green-200 m-4 cursor-pointer" onClick={()=>{
                   const searchRestro = resturentList.filter(res => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
-                  setFilterdResturent(searchRestro)
+                  setResturentList(searchRestro)
                 }}>Search</button>
               </div>
+
+              <div>
+                <label className="text-xl"> UserName :  </label>
+                <input className="border border-black p-2" onChange={(e) => setUserName(e.target.value)} value={loggedInUser} />
+              </div>
+
               <div>
                 <button className="filter-btn px-5 py-2 mr-3 border border-gray-200 rounded-md bg-gray-200 cursor-pointer" onClick={() => {
-                  const filterdList = resturentList.filter(res => res.info.avgRating > 4.4)
-                  setResturentList(filterdList)
+                  const filterdList = resturentList.filter(res => res.info.avgRating > 4.3)
+                  setFilterdResturent(filterdList)
                 }} >Top Rated Resturents</button>
               </div>
+
             </div>
             <div className="resturent-carts grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
+                {/* and use map function to loop array (Secound way) */}
+                { 
+                  filterdResturent.map((resturent) => 
+                    <Link to={"/restaurents/" + resturent.info.id} key={resturent.info.id} >
+                      {
+                        resturent.info.promoted ? <ResturentCartPromoted resData={resturent} /> : <ResturentCart resData={resturent}  />
+                      }
+                    </Link>
+                  )
+                }
                 {/* First way 
                 <ResturentCart resData={resList[0]} />
                 <ResturentCart resData={resList[1]} />
@@ -79,16 +98,6 @@ const Body = () => {
                 <ResturentCart resData={resList[18]} />
                 <ResturentCart resData={resList[19]} />
                  */}
-                 {/* and use map function to loop array (Secound way) */}
-                { 
-                  filterdResturent.map((resturent) => 
-                    <Link to={"/restaurents/" + resturent.info.id} key={resturent.info.id} >
-                      {
-                        resturent.info.promoted ? <ResturentCartPromoted resData={resturent} /> : <ResturentCart resData={resturent}  />
-                      }
-                    </Link>
-                  )
-                }
             </div>
         </div>
     )

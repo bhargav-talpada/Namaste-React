@@ -20,13 +20,13 @@ export const Header = () => {
             <div className="nav-items">
                 <ul className="flex justify-center items-center p-4 m-4">
                     <li className="px-4"> {onlineStatus ? "🟢" : "🔴"} </li>
-                    <li className="px-4"><Link to="/">Home</Link></li>
-                    <li className="px-4"><Link to="/grocery">Grocery</Link></li>
-                    <li className="px-4"><Link to="/about">About</Link></li>
-                    <li className="px-4"><Link to="/contact">Contact</Link></li>
-                    <li className="px-4"><Link>Cart</Link></li>
-                    <button onClick={()=>{btnName === 'LogIn' ? setBtnName("LogOut") : setBtnName("LogIn")}} className="btnlogin">{btnName}</button>
-                    <li className="px-4 font-bold text-lg">{loggedInUser}</li>
+                    <li className="px-4 text-xl cursor-pointer"><Link to="/">Home</Link></li>
+                    <li className="px-4 text-xl cursor-pointer"><Link to="/grocery">Grocery</Link></li>
+                    <li className="px-4 text-xl cursor-pointer"><Link to="/about">About</Link></li>
+                    <li className="px-4 text-xl cursor-pointer"><Link to="/contact">Contact</Link></li>
+                    <li className="px-4 text-xl cursor-pointer"><Link>Cart</Link></li>
+                    <button onClick={()=>{btnName === 'LogIn' ? setBtnName("LogOut") : setBtnName("LogIn")}} className="btnlogin bg-green-500 px-6 py-2 rounded-md text-xl cursor-pointer">{btnName}</button>
+                    <li className="px-4 font-bold text-2xl text-blue-600">{loggedInUser}</li>
                 </ul>
             </div>
         </div>

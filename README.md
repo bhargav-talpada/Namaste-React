@@ -89,3 +89,11 @@
 - Higher Order Component
 - It Takes components as a input
 - And return components
+
+# useContext
+- passing data to multiple component without help of props.
+- handle multiple state
+- create using createContext()
+- access context to use of useContext() hook
+- access context in class components using of contextName.Consumer
+- modify your context using contextName.Provider

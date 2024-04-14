@@ -34,11 +34,11 @@ class UserClass extends React.Component {
         clearInterval(this.timer);
     }
     render(){
-        // const { contact, email} = this.props;
-        const {name, location , contact, email} = this.state.userInfo;
+        const { contact, email} = this.props;
+        const {name, location} = this.state.userInfo;
         // console.log("Render");
         return(
-            <div className="user-card m-4 p-4 w-60 text-xl bg-gray-200">
+            <div className="user-card m-4 p-4 w-96 text-xl bg-gray-200">
                 <h1>Name : {name}</h1>
                 <h3>Location : {location}</h3>
                 <h3>Contact : {contact}</h3>

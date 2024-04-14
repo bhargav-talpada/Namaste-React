@@ -10,7 +10,7 @@ import ResturentMenu from "./components/ResturentMenu";
 import UserContext from "./utils/UserContext";
 
 
-const Grocery = lazy(() => import("./components/Grocery") );
+const Grocery = lazy(() => import("./components/Grocery") );   // lazy loading...
 
 const App = () => {
 
@@ -24,9 +24,11 @@ const App = () => {
     }, [])
 
     return(
-        <UserContext.Provider value={{ loggedInUser : userName }}>
+        <UserContext.Provider value={{ loggedInUser : userName, setUserName }}>
             <div>
+            {/* <UserContext.Provider value={{ loggedInUser : "B. Talpada" }}> */}
                 <Header />
+            {/* </UserContext.Provider> */}
                 <Outlet />
             </div>
         </UserContext.Provider>
