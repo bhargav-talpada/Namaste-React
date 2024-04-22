@@ -226,6 +226,8 @@ Namaste React :-
 	-> Redux and React are saparete libraries.
 	-> Redux offering easy debugging.
 	=> Zustand - is a another library to handle states.
+	=> useSelector - it reads data from redux store slice.
+	=> useDispatch - it dispatch data from redux store slice to component.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
