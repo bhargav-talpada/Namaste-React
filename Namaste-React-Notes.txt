@@ -228,6 +228,10 @@ Namaste React :-
 	=> Zustand - is a another library to handle states.
 	=> useSelector - it reads data from redux store slice.
 	=> useDispatch - it dispatch data from redux store slice to component.
+	=> Reducers - it is a combination of multiple small reducer function.
+	=> Reducer - it is a big object that contains small reducers.
+	-> In vanilla redux (older redux) don't have to Mutable state.
+	-> Mutable state means state updates itself automatically.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
