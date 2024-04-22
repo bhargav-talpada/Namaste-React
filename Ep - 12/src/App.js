@@ -8,7 +8,8 @@ import Contact from "./components/Contact";
 import PageNotFound from "./components/PageNotFound";
 import ResturentMenu from "./components/ResturentMenu";
 import UserContext from "./utils/UserContext";
-
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
 
 const Grocery = lazy(() => import("./components/Grocery") );   // lazy loading...
 
@@ -24,14 +25,16 @@ const App = () => {
     }, [])
 
     return(
-        <UserContext.Provider value={{ loggedInUser : userName, setUserName }}>
-            <div>
-            {/* <UserContext.Provider value={{ loggedInUser : "B. Talpada" }}> */}
-                <Header />
-            {/* </UserContext.Provider> */}
-                <Outlet />
-            </div>
-        </UserContext.Provider>
+        <Provider store={appStore}>
+            <UserContext.Provider value={{ loggedInUser : userName, setUserName }}>
+                <div>
+                {/* <UserContext.Provider value={{ loggedInUser : "B. Talpada" }}> */}
+                    <Header />
+                {/* </UserContext.Provider> */}
+                    <Outlet />
+                </div>
+            </UserContext.Provider>
+        </Provider>
     )
 }
 
