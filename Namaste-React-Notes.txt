@@ -221,6 +221,7 @@ Namaste React :-
 ==> Ep - 12 :-
 
 	=> Redux - Redux is used to handle multiple states.
+	-> Install CMD - npm i @reduxjs/toolkit or npm i react-redux
 	-> Redux is not a mandetory.
 	-> Redux and React are saparete libraries.
 	-> Redux offering easy debugging.
