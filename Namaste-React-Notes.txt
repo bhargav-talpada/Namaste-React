@@ -168,6 +168,7 @@ Namaste React :-
 	-> Never update your state variables directly.
 
 ==> Ep - 09 :- 
+
 	=> Single Responsibility Principle : You have a single class or you have single function or you have a single identity that should have a single responsibility.
 	=> Modularity : You break down of your code in different different module.  
 	=> Custom Hooks : You can create your own hooks.
@@ -185,6 +186,7 @@ Namaste React :-
 	-> element: <Suspense fallback={<h1>Loading...</h1>}><Grocery /></Suspense>
 
 ==> Ep - 10 :-
+
 	-> To many ways to style your component like : Normal CSS, Saas, Scss, Muterial UI, Chakra UI, Bootstrap, Ant-Design, Tailwind Css.
 	=> Tailwind Css : is a framework of css.
 	-> To install - npm i -D tailwindcss postcss 
@@ -217,6 +219,7 @@ Namaste React :-
 	-> You may also create nested context Provider.
 
 ==> Ep - 12 :-
+
 	=> Redux - Redux is used to handle multiple states.
 	-> Redux is not a mandetory.
 	-> Redux and React are saparete libraries.

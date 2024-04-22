@@ -97,3 +97,11 @@
 - access context to use of useContext() hook
 - access context in class components using of contextName.Consumer
 - modify your context using contextName.Provider
+
+# Redux ToolKit (RTK)
+- Install R@reduxjs/toolkit and react-redux
+- Build our store
+- Connect our store to our app
+- Slice (CartSlice)
+- Dispatch (action)
+- Selector
