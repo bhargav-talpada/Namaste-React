@@ -216,6 +216,13 @@ Namaste React :-
 	-> You can also update your useContext value using context Provider.
 	-> You may also create nested context Provider.
 
+==> Ep - 12 :-
+	=> Redux - Redux is used to handle multiple states.
+	-> Redux is not a mandetory.
+	-> Redux and React are saparete libraries.
+	-> Redux offering easy debugging.
+	=> Zustand - is a another library to handle states.
+
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
