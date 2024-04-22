@@ -210,11 +210,18 @@ Namaste React :-
 							{({loggedInUser}) => <h1>{loggedInUser}</h1>}
 						</UserContext.Consumer>
 		-> Classbased component does not have a hooks to use consumer to access useContext data.
-		-> consumer takes a callback function and this function gives you a access od context.
+		-> consumer takes a callback function and this function gives you a access of context.
 		-> You can use consumer a multiple time.
 	-> I will pass new context information in my app using context Provider.
 	-> You can also update your useContext value using context Provider.
 	-> You may also create nested context Provider.
+
+==> Ep - 12 :-
+	=> Redux - Redux is used to handle multiple states.
+	-> Redux is not a mandetory.
+	-> Redux and React are saparete libraries.
+	-> Redux offering easy debugging.
+	=> Zustand - is a another library to handle states.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
