@@ -10,6 +10,7 @@ import ResturentMenu from "./components/ResturentMenu";
 import UserContext from "./utils/UserContext";
 import { Provider } from "react-redux";
 import appStore from "./utils/appStore";
+import Cart from "./components/Cart";
 
 const Grocery = lazy(() => import("./components/Grocery") );   // lazy loading...
 
@@ -59,10 +60,15 @@ const appRouter = createBrowserRouter([
             {
                 path: '/restaurents/:resId',
                 element: <ResturentMenu />
-            },{
+            },
+            {
                 path: '/grocery',
                 element: <Suspense fallback={<h1>Loading...</h1>}><Grocery /></Suspense>
-            }
+            },
+            {
+                path: '/cart',
+                element: <Cart />
+            },
         ],
         errorElement: <PageNotFound />,
     },

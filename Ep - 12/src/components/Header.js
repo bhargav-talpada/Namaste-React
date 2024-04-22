@@ -29,7 +29,7 @@ export const Header = () => {
                     <li className="px-4 text-xl cursor-pointer"><Link to="/grocery">Grocery</Link></li>
                     <li className="px-4 text-xl cursor-pointer"><Link to="/about">About</Link></li>
                     <li className="px-4 text-xl cursor-pointer"><Link to="/contact">Contact</Link></li>
-                    <li className="px-4 text-xl cursor-pointer flex gap-2"><FaOpencart className="text-2xl" /><Link>Cart ({cartItems.length})</Link></li>
+                    <li className="px-4 text-xl cursor-pointer flex gap-2"><FaOpencart className="text-2xl" /><Link to="/cart">Cart ({cartItems.length})</Link></li>
                     <button onClick={()=>{btnName === 'LogIn' ? setBtnName("LogOut") : setBtnName("LogIn")}} className="btnlogin bg-green-500 px-6 py-2 rounded-md text-xl cursor-pointer">{btnName}</button>
                     <li className="px-4 font-bold text-2xl text-blue-600">{loggedInUser}</li>
                 </ul>

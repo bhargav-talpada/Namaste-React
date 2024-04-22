@@ -8,8 +8,8 @@ const ItemList = ({items}) => {
 
     const dispatch = useDispatch();
 
-    const handleAddItem = () => {
-        dispatch(addItem())                                                                                                                                                                                                                                                                            
+    const handleAddItem = (item) => {
+        dispatch(addItem(item))                                                                                                                                                                                                                                                                            
     }
 
     return(
@@ -27,7 +27,7 @@ const ItemList = ({items}) => {
                     </div>
                     <div className=" mb-10">
                         <div className="absolute">
-                            <button onClick={handleAddItem} className="mx-7 my-32 px-10 rounded-md p-2 text-green-500 text-xl bg-white shadow-2xl duration-500 hover:bg-gray-200 m-auto">Add</button>
+                            <button onClick={() => handleAddItem(item)} className="mx-7 my-32 px-10 rounded-md p-2 text-green-500 text-xl bg-white shadow-2xl duration-500 hover:bg-gray-200 m-auto">Add</button>
                         </div>
                         <img src={REST_IMG_URL + item.card.info.imageId} className="w-40 h-36 rounded-xl" alt="Customizable" />
                     </div>
