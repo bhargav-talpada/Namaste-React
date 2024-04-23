@@ -230,8 +230,8 @@ Namaste React :-
 	=> useDispatch - it dispatch data from redux store slice to component.
 	=> Reducers - it is a combination of multiple small reducer function.
 	=> Reducer - it is a big object that contains small reducers.
-	-> In vanilla redux (older redux) don't have to Mutable state.
-	-> Mutable state means state updates itself automatically.
+	-> In vanilla redux (older redux) don't have to Mutate state.
+	-> Mutate state means state updates itself automatically.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
