@@ -237,7 +237,7 @@ Namaste React :-
 	-> Redux Toolkit using something known as immer.
 	-> immer library finding the difference between the original state the mutate state and the gives you back a new state which is 
 		immutable state.
-	-> 
+	-> Redux DevTool Chrome Extension
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
