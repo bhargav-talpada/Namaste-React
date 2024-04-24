@@ -4,6 +4,8 @@
   "description": "This is a Namaste React Episode Number 13",
   "main": "index.js",
   "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "author": "Talpada Bhargav",
