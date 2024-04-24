@@ -110,3 +110,10 @@
 - Unit Testing
 - Integration Testing
 - End to End Testing (E2E)
+
+# Setting up testing in our app
+- Install React Testing Library
+- Install Jest
+- Install Babel depenencies
+- Configure Babel
+- Configure Parcel config file to disable default babel transpilation

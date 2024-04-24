@@ -252,6 +252,15 @@ Namaste React :-
 			-> In this type of testing test application from user landing on the site to user leave the site.
 			-> It test the flow of user can do om site.
 			-> E2E testing needs of multiple types of tools to test your whole site flow.
+		-> React Testing library to are used to write test cases.
+		-> React Testing library uses Jest.
+		-> Jest is javascript testing library.
+		-> We need Jest and React Testing Library both to test our application.
+		-> install command : npm install -D @testing-library/react
+		-> In above command -D means Dev Dependuncy.
+		-> Jest install command : npm i -D jest
+		-> We are need to install babel dependnucy because use babel in Testing.
+		-> install command : npm install --save-dev babel-jest @babel/core @babel/preset-env
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
