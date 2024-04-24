@@ -261,6 +261,10 @@ Namaste React :-
 		-> Jest install command : npm i -D jest
 		-> We are need to install babel dependnucy because use babel in Testing.
 		-> install command : npm install --save-dev babel-jest @babel/core @babel/preset-env
+		-> Command for Jest Configuration : npx jest --init
+		-> Jsdom - It is not a browser but it's like a browser which will give you features of browser.
+		-> If you're using Jest 28 or later, jest-environment-jsdom package now must be installed separately.
+		-> command :  npm i -D jest-environment-jsdom	
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
