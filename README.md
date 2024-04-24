@@ -105,3 +105,8 @@
 - Slice (CartSlice)
 - Dispatch (action)
 - Selector
+
+# Types of Testing for developer
+- Unit Testing
+- Integration Testing
+- End to End Testing (E2E)

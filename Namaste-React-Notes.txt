@@ -241,6 +241,18 @@ Namaste React :-
 
 ==> Ep - 13 :-
 
+	=> Testing - three types of Testing developer can do.
+		1. Unit Testing - 
+			-> You test your react component in isolation.
+			-> You testing of small component (unit) of your react application not whole application.
+		2. Integration Testing - 
+			-> There are multiple component and there are talking to each other and they develope the flow abd test the application.
+			-> In Integration testing multiple component involve and test the application.
+		3. End to End Testing (E2E) - 
+			-> In this type of testing test application from user landing on the site to user leave the site.
+			-> It test the flow of user can do om site.
+			-> E2E testing needs of multiple types of tools to test your whole site flow.
+
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.

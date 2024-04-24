@@ -48,7 +48,7 @@ const Body = () => {
                 <input type="text" className="searchinp p-2 border border-solid border-black " placeholder="Search..." value={searchText} onChange={(e)=>{setSearchText(e.target.value)}}/>
                 <button className="searchbtn border border-green-300 rounded-md px-5 py-2 bg-green-200 m-4 cursor-pointer" onClick={()=>{
                   const searchRestro = resturentList.filter(res => res.info.name.toLowerCase().includes(searchText.toLowerCase()));
-                  setResturentList(searchRestro)
+                  setFilterdResturent(searchRestro)
                 }}>Search</button>
               </div>
 
