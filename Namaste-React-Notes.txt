@@ -266,6 +266,8 @@ Namaste React :-
 		-> If you're using Jest 28 or later, jest-environment-jsdom package now must be installed separately.
 		-> command :  npm i -D jest-environment-jsdom	
 	-> which file you are test to this file create inside of __tests__ folder and give the nane of file like filename.test.js
+	-> Babel are transpailar that convert your code for one form to another form.
+	-> @babel/preset-react testing library are helping to convert code for JSX to HTML to read properly.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.

@@ -119,3 +119,6 @@
 - Configure Parcel config file to disable default babel transpilation
 - Jest configuration : npx jest --init
 - Install jsdom library : npm i -D jest-environment-jsdom
+- Install @babel/preset-react : to make JSX work in tast cases
+- Include @babel/preset-react inside my babel config
+- Install @testing-library/jest-dom
