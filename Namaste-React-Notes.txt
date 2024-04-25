@@ -265,6 +265,7 @@ Namaste React :-
 		-> Jsdom - It is not a browser but it's like a browser which will give you features of browser.
 		-> If you're using Jest 28 or later, jest-environment-jsdom package now must be installed separately.
 		-> command :  npm i -D jest-environment-jsdom	
+	-> which file you are test to this file create inside of __tests__ folder and give the nane of file like filename.test.js
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
