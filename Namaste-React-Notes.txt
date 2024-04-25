@@ -65,7 +65,7 @@ Namaste React :-
 	-> Props are normal argument.
 	=> Config-driven UI :It is a technique that allows you to create dynamic and customizable UIs without hard coding them. 
 	-> data?.data = it's known as optional chaining.
-	-> Whwnever you are doing mapping and looping you write key of element.
+	-> Whenever you are doing mapping and looping you write key of element.
 	-> You dont't have an unique key you write index as key but it's not recommended. 
 
 ==> Ep - 05 :- 
