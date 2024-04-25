@@ -13,7 +13,7 @@ Namaste React :-
 	-> in object parameter you can pass attribute like name of id or class of element you should created.
 	-> in third parameter you can create a child element or siblings of child elements.
 	-> Example : const heading = React.createElement('h1', {id: "heading", class: "heading"}, 'Hello from React');
-	-> in react ReacrDOM.createRoot() to create root element.
+	-> in react ReactDOM.createRoot() to create root element.
 	-> Example : const root = ReactDOM.createRoot(document.getElementById('root'))
 
 ==> Ep - 02 :-
