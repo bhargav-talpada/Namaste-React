@@ -228,12 +228,12 @@ Namaste React :-
 	=> Zustand - is a another library to handle states.
 	=> useSelector - it reads data from redux store slice.
 	=> useDispatch - it dispatch data from redux store slice to component.
-	=> Reducers - it is a combination of multiple small reducer function.
+	=> Reducers - it is a combination of multiple small function.
 	=> Reducer - it is a big object that contains small reducers.
 	-> In vanilla redux (older redux) don't have to Mutate state.
 	-> In vanilla redux we can not modify state directly.
 	-> Mutate state means state updates itself automatically.
-	-> Reduc Toolkit have to mutate the state.
+	-> Redux Toolkit have to mutate the state.
 	-> Redux Toolkit using something known as immer.
 	-> immer library finding the difference between the original state the mutate state and the gives you back a new state which is 
 		immutable state.
