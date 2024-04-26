@@ -3,6 +3,7 @@ import { REST_IMG_URL } from "../utils/constants";
 
 const ResturentCart = (props) =>{
     const {resData} = props;
+    // console.log("reddata", resData);
     const {cloudinaryImageId, name, cuisines, avgRating, costForTwo, sla} = resData?.info;
     return(
         <div className="res-carts m-4 p-4 w-60 h-[415px] bg-gray-100 rounded-md transition-all duration-700 hover:scale-110 hover:bg-gray-300" >
