@@ -15,7 +15,7 @@ const ItemList = ({items}) => {
     return(
         <div className="">
             {items.map((item) => 
-                <div key={item.card.info.id} className="flex justify-between items-center p-2 m-1 border-b-2 border-gray-300" >
+                <div data-testid="foodItems" key={item.card.info.id} className="flex justify-between items-center p-2 m-1 border-b-2 border-gray-300" >
                     <div className="flex flex-col text-left w-[450px]">
                         <div className="flex flex-col py-2">
                             <span className="my-2">{item.card.info.itemAttribute.vegClassifier == "VEG" ? <FaStopCircle className="text-green-500 text-xl" /> : <FaStopCircle className="text-red-500 text-xl" />}</span>

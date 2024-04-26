@@ -3,7 +3,7 @@ import {render,screen} from "@testing-library/react";
 import "@testing-library/jest-dom";
 
 describe("Contact Us Page Test Cases", () => {
-s
+
 
     test('should load contact page', () => { 
         render(<Contact />);
