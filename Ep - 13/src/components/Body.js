@@ -54,7 +54,7 @@ const Body = () => {
 
               <div>
                 <label className="text-xl"> UserName :  </label>
-                <input className="border border-black p-2" onChange={(e) => setUserName(e.target.value)} value={loggedInUser} />
+                <input data-testid="userNameInput" className="border border-black p-2" onChange={(e) => setUserName(e.target.value)} value={loggedInUser} />
               </div>
 
               <div>
