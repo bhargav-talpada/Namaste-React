@@ -278,6 +278,8 @@ Namaste React :-
 	-> You write your test cases inside of it().
 	-> it() is are similar to describe().
 	-> it() is just aliace of describe().
+	-> In package.json, "watch-test" : "jest --watch"
+	-> Above help to it automatically test your test cases.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
