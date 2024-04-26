@@ -5,75 +5,79 @@ import MOCK_DATA from "../mocks/mockResListData.json";
 import { act } from "react-dom/test-utils";
 import { BrowserRouter } from "react-router-dom";
 
-global.fetch = jest.fn(() => {
-    return Promise.resolve({
-        json: () => {
-            return Promise.resolve(MOCK_DATA);
-        },
+describe("Contact Us Page Test Cases", () => {
+
+    global.fetch = jest.fn(() => {
+        return Promise.resolve({
+            json: () => {
+                return Promise.resolve(MOCK_DATA);
+            },
+        });
     });
-});
 
-test('should render the body component with search button', async () => { 
-    await act(async () => 
-        render(
-            <BrowserRouter>
-                <Body />
-            </BrowserRouter>
-        )
-    );  
+    test('should render the body component with search button', async () => { 
+        await act(async () => 
+            render(
+                <BrowserRouter>
+                    <Body />
+                </BrowserRouter>
+            )
+        );  
 
-    const searchBtn = screen.getByRole("button", {name: "Search"});
+        const searchBtn = screen.getByRole("button", {name: "Search"});
 
-    expect(searchBtn).toBeInTheDocument();
-    
-});
+        expect(searchBtn).toBeInTheDocument();
+        
+    });
 
-test('should render the body component filter with Top Rated Resturents', async () => { 
-    await act(async () => 
-        render(
-            <BrowserRouter>
-                <Body />
-            </BrowserRouter>
-        )
-    );
+    test('should render the body component filter with Top Rated Resturents', async () => { 
+        await act(async () => 
+            render(
+                <BrowserRouter>
+                    <Body />
+                </BrowserRouter>
+            )
+        );
 
-    const cardsBeforeFilter = screen.getAllByTestId("resCard");
+        const cardsBeforeFilter = screen.getAllByTestId("resCard");
 
-    expect(cardsBeforeFilter.length).toBe(20);
+        expect(cardsBeforeFilter.length).toBe(20);
 
-    const ratedBtn = screen.getByRole("button", {name: "Top Rated Resturents"});
+        const ratedBtn = screen.getByRole("button", {name: "Top Rated Resturents"});
 
-    fireEvent.click(ratedBtn);
+        fireEvent.click(ratedBtn);
 
-    const cardsAfterFilter = screen.getAllByTestId("resCard");
+        const cardsAfterFilter = screen.getAllByTestId("resCard");
 
-    expect(cardsAfterFilter.length).toBe(12);
+        expect(cardsAfterFilter.length).toBe(12);
 
-});
+    });
 
-test('should render the body component with search input with on change event', async () => { 
-    await act(async () => 
-        render(
-            <BrowserRouter>
-                <Body />
-            </BrowserRouter>
-        )
-    );
+    test('should render the body component with search input with on change event', async () => { 
+        await act(async () => 
+            render(
+                <BrowserRouter>
+                    <Body />
+                </BrowserRouter>
+            )
+        );
 
-    const cardsBeforeSearch = screen.getAllByTestId("resCard");
+        const cardsBeforeSearch = screen.getAllByTestId("resCard");
 
-    expect(cardsBeforeSearch.length).toBe(20);
+        expect(cardsBeforeSearch.length).toBe(20);
 
-    const searchBtn = screen.getByRole("button", {name: "Search"});
+        const searchBtn = screen.getByRole("button", {name: "Search"});
 
-    const searchInput = screen.getByTestId("searchInput");
+        const searchInput = screen.getByTestId("searchInput");
 
-    fireEvent.change(searchInput, {target: {value:"pizza"}});
+        fireEvent.change(searchInput, {target: {value:"pizza"}});
 
-    fireEvent.click(searchBtn);
+        fireEvent.click(searchBtn);
 
-    const cardsAfterSearch = screen.getAllByTestId("resCard");
+        const cardsAfterSearch = screen.getAllByTestId("resCard");
 
-    expect(cardsAfterSearch.length).toBe(4);
+        expect(cardsAfterSearch.length).toBe(4);
+
+    });
 
 });
