@@ -280,6 +280,10 @@ Namaste React :-
 	-> it() is just aliace of describe().
 	-> In package.json, "watch-test" : "jest --watch"
 	-> Above help to it automatically test your test cases.
+	-> You want to do something before all the test cases you must write inside the beforeAll(()=>{}).
+	-> You want to do something before each any test case you must write inside the beforeEach(()=>{}).
+	-> similarlly you want to do something after all the test cases you must write inside the afterAll(()=>{}).
+	-> similarlly you want to do something after each any test case you must write inside the afterEach(()=>{}).
 
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.

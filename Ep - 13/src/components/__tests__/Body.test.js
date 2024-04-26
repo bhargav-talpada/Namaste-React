@@ -15,6 +15,22 @@ describe("Contact Us Page Test Cases", () => {
         });
     });
 
+    afterAll(() => {
+        console.log('after all');
+    });
+
+    afterEach(() => {
+        console.log('after each');
+    });
+
+    beforeAll(() => {
+        console.log('before all');
+    });
+
+    beforeEach(() => {
+        console.log('before each');
+    });
+
     test('should render the body component with search button', async () => { 
         await act(async () => 
             render(
