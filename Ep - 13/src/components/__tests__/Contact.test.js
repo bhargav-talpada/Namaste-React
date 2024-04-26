@@ -1,5 +1,4 @@
 import Contact from "../Contact";
-import About from "../About";
 import {render,screen} from "@testing-library/react";
 import "@testing-library/jest-dom";
 
