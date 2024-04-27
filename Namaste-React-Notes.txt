@@ -285,6 +285,11 @@ Namaste React :-
 	-> similarlly you want to do something after all the test cases you must write inside the afterAll(()=>{}).
 	-> similarlly you want to do something after each any test case you must write inside the afterEach(()=>{}).
 
+==> Ep - 14 :-
+
+	-> Stated a final project of this Namaste React series.
+	-> NetflixGPT
+
 -------------------------------------------------------------------------------------------------------------------------------------------------
 API : API stand for Application Programing Interface.
 	React used to call api.
