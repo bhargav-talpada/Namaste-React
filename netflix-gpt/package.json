@@ -1,5 +1,6 @@
 {
   "name": "netflix-gpt",
+  "description": "This is a final project of Namaste React Series.",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
