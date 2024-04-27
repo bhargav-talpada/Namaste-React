@@ -13,3 +13,4 @@ export const div = (a,b) => {
 export const sub = (a,b) => {
     return a-b;
 }
+
