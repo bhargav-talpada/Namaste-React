@@ -126,3 +126,18 @@
 # Netflix-GPT 🎦🎬
 - Create React App
 - Configure Tailwind Css
+
+# Features
+- Login/SignUp page
+    - SignIn / SignUp form
+    - redirect to browse page
+- Browse (after authentication)
+    - Header
+    - Main Movie
+        - Triler in background
+        - Title & discription
+        - Movie Suggestions
+            - Movie List * N
+- NetflixGPT
+    - Search Bar
+    - Movie Suggetions
