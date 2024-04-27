@@ -1,6 +1,6 @@
-# Namaste React 
+# Namaste React 🚀
 
-# Parcel 
+# Parcel 📦
 - Dev Build
 - Local Server
 - HMR = Hot Module Replacement
@@ -19,7 +19,7 @@
 - Tree Shaking - remove unused code
 - Different dev and production bundle
 
-# Food Order App 
+# Food Order App 🍕
 -> Header
     - Logo
     - Nav Items
@@ -106,7 +106,7 @@
 - Dispatch (action)
 - Selector
 
-# Types of Testing for developer
+# Types of Testing for developer 🧪
 - Unit Testing
 - Integration Testing
 - End to End Testing (E2E)
@@ -122,3 +122,7 @@
 - Install @babel/preset-react : to make JSX work in tast cases
 - Include @babel/preset-react inside my babel config
 - Install @testing-library/jest-dom
+
+# Netflix-GPT 🎦🎬
+- Create React App
+- Configure Tailwind Css
