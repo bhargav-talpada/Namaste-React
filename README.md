@@ -126,6 +126,8 @@
 # Netflix-GPT 🎦🎬
 - Create React App
 - Configure Tailwind Css
+- Header
+- Login From
 
 # Features
 - Login/SignUp page
