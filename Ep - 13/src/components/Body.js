@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import useOnlineStatus from "../utils/useOnlineStatus";
 import { RiWifiOffLine } from "react-icons/ri";
 import UserContext from "../utils/UserContext";
+import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 
 const Body = () => {
@@ -65,8 +66,12 @@ const Body = () => {
               </div>
 
             </div>
-            <div className="resturent-carts grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6">
-                {/* and use map function to loop array (Secound way) */}
+            <div x-data="{ slide: 0 }" class="">
+              <div className="flex justify-end text-3xl mr-2">
+                <BsArrowLeftCircleFill  className="text-gray-500 transition-all duration-700 hover:scale-125 "/>
+                <BsArrowRightCircleFill className="ml-4 text-gray-500 transition-all duration-700 hover:scale-125 " />
+              </div>
+              <div className="resturent-carts flex space-x-4 overflow-x-auto">
                 { 
                   filterdResturent.map((resturent) => 
                     <Link to={"/restaurents/" + resturent.info.id} key={resturent.info.id} >
@@ -76,28 +81,7 @@ const Body = () => {
                     </Link>
                   )
                 }
-                {/* First way 
-                <ResturentCart resData={resList[0]} />
-                <ResturentCart resData={resList[1]} />
-                <ResturentCart resData={resList[2]} />
-                <ResturentCart resData={resList[3]} />
-                <ResturentCart resData={resList[4]} />
-                <ResturentCart resData={resList[5]} />
-                <ResturentCart resData={resList[6]} />
-                <ResturentCart resData={resList[7]} />
-                <ResturentCart resData={resList[8]} />
-                <ResturentCart resData={resList[9]} />
-                <ResturentCart resData={resList[10]} />
-                <ResturentCart resData={resList[11]} />
-                <ResturentCart resData={resList[12]} />
-                <ResturentCart resData={resList[13]} />
-                <ResturentCart resData={resList[14]} />
-                <ResturentCart resData={resList[15]} />
-                <ResturentCart resData={resList[16]} />
-                <ResturentCart resData={resList[17]} />
-                <ResturentCart resData={resList[18]} />
-                <ResturentCart resData={resList[19]} />
-                 */}
+              </div>
             </div>
         </div>
     )
