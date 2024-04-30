@@ -8,11 +8,13 @@ import UserContext from "../utils/UserContext";
 import { BsArrowLeftCircleFill, BsArrowRightCircleFill } from "react-icons/bs";
 
 
+
 const Body = () => {
 
     const [resturentList, setResturentList] = useState([]);
     const [searchText, setSearchText] = useState("");
     const [filterdResturent, setFilterdResturent] = useState([]);
+    const [resRowHeader, setResRowHeader] = useState("");
 
     const ResturentCartPromoted = promotedLabel(ResturentCart);
 
@@ -23,11 +25,12 @@ const Body = () => {
     const fetchData = async () => {
       const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/v5?lat=22.2629975&lng=70.7862588&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING");
       const json = await data.json();
+      console.log(json);
 
       //Optional Chaining
       setResturentList(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
       setFilterdResturent(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-      // console.log(resturentList);
+      setResRowHeader(json?.data?.cards[1]?.card?.card?.header?.title);
     }
 
     const onlineStatus = useOnlineStatus();
@@ -43,7 +46,8 @@ const Body = () => {
 
     //Conditional Rendering
     return resturentList.length === 0 ? <Shimmer /> : (
-        <div className="body">
+      <div className="flex justify-center ">
+        <div className="body w-9/12">
             <div className="filter flex justify-between items-center">
               <div className="search m-2 p-3">
                 <input type="text" data-testid="searchInput" className="searchinp p-2 border border-solid border-black " placeholder="Search..." value={searchText} onChange={(e)=>{setSearchText(e.target.value)}}/>
@@ -67,11 +71,14 @@ const Body = () => {
 
             </div>
             <div x-data="{ slide: 0 }" class="">
-              <div className="flex justify-end text-3xl mr-2">
-                <BsArrowLeftCircleFill  className="text-gray-500 transition-all duration-700 hover:scale-125 "/>
-                <BsArrowRightCircleFill className="ml-4 text-gray-500 transition-all duration-700 hover:scale-125 " />
+              <div className="flex justify-between items-center">
+                <h1 className="text-3xl ml-4">{resRowHeader}</h1>
+                <div className="flex justify-center text-3xl mr-3">
+                  <BsArrowLeftCircleFill  className="text-gray-500 transition-all duration-700 hover:scale-125 "/>
+                  <BsArrowRightCircleFill className="ml-4 text-gray-500 transition-all duration-700 hover:scale-125 " />
+                </div>
               </div>
-              <div className="resturent-carts flex space-x-4 overflow-x-auto">
+              <div className="resturent-carts flex space-x-4 overflow-x-auto overflow-y-hidden">
                 { 
                   filterdResturent.map((resturent) => 
                     <Link to={"/restaurents/" + resturent.info.id} key={resturent.info.id} >
@@ -84,6 +91,7 @@ const Body = () => {
               </div>
             </div>
         </div>
+      </div>
     )
 }
 
